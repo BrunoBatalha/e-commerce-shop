@@ -1,0 +1,12 @@
+.menuMobile {
+	display:none;
+	width:40px;
+	height:40px;
+	margin-top:40px;
+	margin-bottom:40px;
+	margin-right:20px;
+}
+.mm_line {
+	height:3px;
+	background-color:#39aae1;
+}

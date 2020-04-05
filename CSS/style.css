@@ -1,0 +1,285 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/**********************HEADER*********************/
+
+header {
+    height: 100px;
+    background-color:#fff;
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid #999;
+    font-family: 'Rubik', sans-serif;
+}
+.container {
+    display: flex;
+    justify-content: space-around;
+    width: 1140px;
+    background-color:#FFF;
+}
+.shop-logo{
+    display:flex;
+    align-items:center;
+}
+#logo-shop-header {
+    width: 180px;
+    /* height: 184px; */
+}
+.menu-header{
+    /*font-size: 10px;*/
+    display:flex;
+    align-items:center;
+}
+nav ul,
+nav li{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+nav ul{
+    display: flex;
+}
+nav a {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 18px;
+    display: block;
+    font-weight: bold;
+    padding: 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #000;
+}
+nav a:hover{
+        color: #5051FF;
+}
+#bottons-sign-enter {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-size: 13px;
+}
+#bottons-sign-enter a{
+    text-decoration: none;
+}
+#enter, #sign {
+    text-decoration: none;
+    color: #000;
+    font-size: 15px;
+    margin-right: 3px;
+}
+#enter:hover{
+    color: #5051FF;
+}
+#sign:hover{
+    color: #5051FF;
+}
+#enter::after{
+    margin-left: 5px;
+    content: '|';
+}
+#btm-active-home{
+    color: #5051FF;
+}
+/***************************** FIM DO HEADER*************************/
+
+/*****************************ÍNICIO DA 1 SECTION*************************/
+section {
+    font-family: 'Sen', sans-serif;
+    height:500px;
+    display: flex;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('../Images/Background-section.jpg');
+}
+#container_section {
+    height: 500px;
+    width: 1140px;
+    display: flex;
+    justify-content: center;
+}
+#sec_text {
+    margin-left: 25px;
+    align-items: center;
+    margin-top: 25px;
+    max-width: 915px;
+}
+.text-center {
+    font-size: 60px;
+    color: #5051FF;
+}
+.subtext {
+    font-style: italic;
+    font-weight: 500;
+    font-size: 27.5px;
+    color: #FFFFFF;
+}
+#btn-sec {
+    margin-top: 35px;
+    margin-left: 250px;
+    text-align: center;
+    border: 1px solid #0064FF;
+    font-size: 25px;
+    background-color: #5051FF;
+    border-radius: 7px;
+    padding:10px;
+    color: #FFF;
+    font-weight: 200;
+    display: inline-block;
+}
+#btn-sec:hover {
+    cursor: pointer;
+    transition: all 0.5s;
+    background-color: #534DE8;
+}
+/*****************************FIM DA 1 SECTION*************************/
+/*****************************ÍNICIO DO ARTICLE*************************/
+article {
+    font-family: 'Sen', sans-serif;
+    height: 500px;
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+}
+#container_article {
+    height: 500px;
+    width: 1140px;
+    background-color:#FFFFFF;
+    display:flex;
+    justify-content: center;
+}
+.text-article-area {
+    display: flex;
+    flex-direction: column;
+}
+.txt-art {
+    color: #005AEB;
+    display: flex;
+    justify-content: center;
+    font-size: 60px;
+}
+#card_article_area {
+    margin-top: 20px;
+    display: flex;
+    width: auto;
+    padding:0px 15px;
+    flex:1;
+}
+#card_article {
+    height: 250px;
+    border-left: 1px solid #005AEB;
+    max-width: 400px;
+}
+.card_image {
+    text-align: center;
+}
+.carrinho {
+    margin-top: 15px;
+    height: 75px;
+    width: 75px;
+}
+.caminhao {
+    margin-top: 15px;
+    height: 75px;
+    width: 75px;
+} 
+.cartao {
+    margin-top: 15px;
+    height: 75px;
+    width: 75px;
+}
+.carrinho-text,.caminhao-text,.cartao-text {
+    color: #4A55E8;
+    font-size: 25px;
+}
+.card-text {
+    padding: 10px;
+    font-weight: 500;
+    font-size: 18px;
+    text-align: center;
+    font-style: italic;
+}
+/*****************************FIM DO ARTICLE*************************/
+/*****************************ÍNICIO DA MAIN*************************/
+main {
+    font-family: 'Sen', sans-serif;
+    height: 550px;
+    background-color: #FFF;
+    display: flex;
+    justify-content: center;
+}
+#container_main {
+    background-color: #FFF;
+    height: 550px;
+    width: 1100px;
+}
+.main-text {
+    border-bottom: 1px solid #005AEB;
+    align-items: flex-start;
+}
+.main-h2-center {
+    text-transform: uppercase;
+    padding: 5px;
+    font-size: 44px;
+    letter-spacing: 1.5px;
+    color:#000472;
+}
+#container_prod {
+    margin-top:15px;
+    font-family: 'Heebo', sans-serif;
+    display: flex;
+    flex: 1;
+}
+.prod {
+padding: 10px;
+   width: 255px;
+   height: 378px;
+   border-left: 1px solid #005AEB;
+   margin-right: 6px;
+   justify-content: center;
+}
+.prod_img {
+    max-width: 255px;
+    padding: 15px;
+    border-bottom: 1px solid #999;
+    text-align: center;
+}
+.iphone6s-img {
+    width: 125px;
+}
+#produto_txt_area {
+    justify-content: center;
+}
+.produto_txt {
+    text-align: center;
+    flex-direction: column;
+}
+.iphone6s-txt {
+    font-size: 18.5px;
+}
+.star-img {
+    text-align: center;
+}
+.produto-starimg {
+    text-align: center;
+    margin:auto;
+    padding: 0px 7px;
+    height: 20px;
+}
+.produto-sbtxt {
+    padding: 15px;
+}
+.prod-sbtxt {
+    font-size: 15.5px;
+    margin-bottom: 6px;
+    margin-top: 6px;
+    font-weight: 500;
+}
+.sbtxt-price {
+    font-size: 24px;
+    font-weight: 600;
+}
+/*****************************FIM DA MAIN*************************/
