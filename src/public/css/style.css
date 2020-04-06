@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Anton|Rubik&display=swap');
-            @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap');
-            @import url('https://fonts.googleapis.com/css?family=Lato|Roboto&display=swap');
-
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lato|Roboto&display=swap');
 body{
     margin: 0;
     padding: 0;
@@ -57,7 +56,7 @@ nav a {
     color: #000;
 }
 nav a:hover{
-        color: #4F75FF;
+        color: #5051FF;
 }
 #bottons-sign-enter {
     display: flex;
@@ -75,101 +74,215 @@ nav a:hover{
     margin-right: 3px;
 }
 #enter:hover{
-    color: #4F75FF;
+    color: #5051FF;
 }
 #sign:hover{
-    color: #4F75FF;
+    color: #5051FF;
 }
 #enter::after{
     margin-left: 5px;
     content: '|';
 }
 #btm-active-home{
-    color: #4F75FF;
+    color: #5051FF;
 }
 /***************************** FIM DO HEADER*************************/
 
 /*****************************ÍNICIO DA 1 SECTION*************************/
-section{
-    height:60px;
-    /*background-color: #6DA6FF;*/
-    /*background-color: #4696E8;*/
-    border-bottom: 1px solid #E3E3E3;
-    margin-bottom: 7px;
+section {
+    font-family: 'Sen', sans-serif;
+    height:500px;
+    display: flex;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('../img/Background-section.jpg');
 }
-#container {
-    margin-top: 0px;
+#container_section {
+    height: 500px;
+    width: 1140px;
+    display: flex;
+    justify-content: center;
 }
-#list-options {
-    padding: 3px 10px;
+#sec_text {
+    margin-left: 25px;
+    align-items: center;
+    margin-top: 25px;
+    max-width: 915px;
 }
-.text-list {
-    font-size: 18px;
-    font-family: 'Lato', sans-serif;
-    font-weight: 600;
-    text-transform: none;
+.text-center {
+    font-size: 60px;
+    color: #5051FF;
 }
-#list-options a:hover {
-    color: #4696E8;
-    border-bottom: 1px solid;
-    cursor: pointer;
+.subtext {
+    font-style: italic;
+    font-weight: 500;
+    font-size: 27.5px;
+    color: #FFFFFF;
 }
-#search-list {
-    position: absolute;
-    left: 78%;
-    transform: translate(-50%,0);
-    top: 115px;
-    padding: 5px 15px;
-    border-radius: 3.5px;
-    border: 1px solid #4696E8;
-    outline: #4696E8;
+#btn-sec {
+    margin-top: 35px;
+    margin-left: 250px;
     text-align: center;
+    border: 1px solid #0064FF;
+    font-size: 25px;
+    background-color: #5051FF;
+    border-radius: 7px;
+    padding:10px;
+    color: #FFF;
+    font-weight: 200;
     display: inline-block;
-    font-size: 15px;
 }
-#search_list i {
-    position: absolute;
-    left: 88%;
-    transform: translate(-50%,0);
-    top: 120px;
-    display: block;
+#btn-sec:hover {
     cursor: pointer;
-}
-#search-list::placeholder {
-    color: #4696E8;
-    font-weight: 600;
+    transition: all 0.5s;
+    background-color: #534DE8;
 }
 /*****************************FIM DA 1 SECTION*************************/
-
-/*****************************BANNER*************************/
-#banner {
-    height: 100px;
-    background-color: #73BFFF;
+/*****************************ÍNICIO DO ARTICLE*************************/
+article {
+    font-family: 'Sen', sans-serif;
+    height: 500px;
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: center;
 }
-/*****************************FIM DO BANNER*************************/
-
-/*****************************Ínicio do Article*************************/
-#shop-items {
-    height: 370px;
-    max-width: 1350px;
+#container_article {
+    height: 500px;
+    width: 1140px;
+    background-color:#FFFFFF;
+    display:flex;
+    justify-content: center;
+}
+.text-article-area {
+    display: flex;
+    flex-direction: column;
+}
+.txt-art {
+    color: #005AEB;
+    display: flex;
+    justify-content: center;
+    font-size: 60px;
+}
+#card_article_area {
+    margin-top: 20px;
+    display: flex;
+    width: auto;
+    padding:0px 15px;
+    flex:1;
+}
+#card_article {
+    height: 250px;
+    border-left: 1px solid #005AEB;
+    max-width: 400px;
+}
+.card_image {
+    text-align: center;
+}
+.carrinho {
+    margin-top: 15px;
+    height: 75px;
+    width: 75px;
+}
+.caminhao {
+    margin-top: 15px;
+    height: 75px;
+    width: 75px;
+} 
+.cartao {
+    margin-top: 15px;
+    height: 75px;
+    width: 75px;
+}
+.carrinho-text,.caminhao-text,.cartao-text {
+    color: #4A55E8;
+    font-size: 25px;
+}
+.card-text {
+    padding: 10px;
+    font-weight: 500;
+    font-size: 18px;
+    text-align: center;
+    font-style: italic;
+}
+/*****************************FIM DO ARTICLE*************************/
+/*****************************ÍNICIO DA MAIN*************************/
+main {
+    font-family: 'Sen', sans-serif;
+    height: 550px;
     background-color: #FFF;
-    border-bottom: 1px solid #E3E3E3;
+    display: flex;
+    justify-content: center;
 }
-#items {
+#container_main {
+    background-color: #FFF;
+    height: 550px;
+    width: 1100px;
+}
+.main-text {
+    border-bottom: 1px solid #005AEB;
+    align-items: flex-start;
+}
+.main-h2-center {
+    text-transform: uppercase;
+    padding: 5px;
+    font-size: 44px;
+    letter-spacing: 1.5px;
+    color:#000472;
+}
+#container_prod {
+    margin-top:15px;
+    font-family: 'Heebo', sans-serif;
     display: flex;
     flex: 1;
 }
-.item-mt {
-    height: 320px;
-    width: 325px;
-    background-image: url("/img/card.jpg");
-    background-size: cover;
-    margin-right: 8px;
-    margin-left: 8px;
-    margin-top: 15px;
-    border-radius: 4px;
-    box-shadow: 0px 0px 2px #1E1F3B;
+.prod {
+padding: 10px;
+   width: 255px;
+   height: 378px;
+   border-left: 1px solid #005AEB;
+   margin-right: 6px;
+   justify-content: center;
 }
-.item-mt:hover {
-    box-shadow: 2px 2px 2px 2px #1E1F3B;
+.prod_img {
+    max-width: 255px;
+    padding: 15px;
+    border-bottom: 1px solid #999;
+    text-align: center;
 }
+.iphone6s-img {
+    width: 125px;
+}
+#produto_txt_area {
+    justify-content: center;
+}
+.produto_txt {
+    text-align: center;
+    flex-direction: column;
+}
+.iphone6s-txt {
+    font-size: 18.5px;
+}
+.star-img {
+    text-align: center;
+}
+.produto-starimg {
+    text-align: center;
+    margin:auto;
+    padding: 0px 7px;
+    height: 20px;
+}
+.produto-sbtxt {
+    padding: 15px;
+}
+.prod-sbtxt {
+    font-size: 15.5px;
+    margin-bottom: 6px;
+    margin-top: 6px;
+    font-weight: 500;
+}
+.sbtxt-price {
+    font-size: 24px;
+    font-weight: 600;
+}
+/*****************************FIM DA MAIN*************************/
