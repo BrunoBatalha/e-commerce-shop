@@ -6,6 +6,7 @@ body {
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
+    overflow: auto;
 }
 
 button, button:active {
@@ -217,15 +218,13 @@ section {
 /*****************************ÍNICIO DO ARTICLE*************************/
 
 article {
-    font-family: 'Sen', sans-serif;
-    height: 500px;
     display: flex;
     justify-content: center;
 }
 
 #container_article {
-    height: 500px;
-    width: 1140px;
+    width: 100%;
+    margin: auto 50px;
     background-color: #FFFFFF;
     display: flex;
     justify-content: center;
@@ -244,11 +243,10 @@ article {
 }
 
 #card_article_area {
-    margin-top: 20px;
     display: flex;
     width: auto;
     padding: 0px 15px;
-    flex: 1;
+    
 }
 
 #card_article {
@@ -298,16 +296,29 @@ article {
 
 main {
     font-family: 'Sen', sans-serif;
-    height: 550px;
     background-color: #FFF;
     display: flex;
     justify-content: center;
 }
-
+@media (max-width:1037px){
+    main{
+        margin-top: 80px;
+    }
+}
+@media (max-width:739px){
+    #card_article_area{
+        display: block;
+    }
+    #container_prod{
+        display: flex;
+        flex-direction: column
+    }
+}
 #container_main {
     background-color: #FFF;
     height: 550px;
-    width: 1100px;
+    width: 100%;
+    margin: auto 100px
 }
 
 .main-text {
