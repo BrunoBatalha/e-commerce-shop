@@ -206,7 +206,7 @@ article {
 /*****************************ÍNICIO DA MAIN*************************/
 main {
     font-family: 'Sen', sans-serif;
-    height: 550px;
+    height: 600px;
     background-color: #FFF;
     display: flex;
     justify-content: center;
@@ -234,9 +234,9 @@ main {
     flex: 1;
 }
 .prod {
-padding: 10px;
+    padding: 10px;
    width: 255px;
-   height: 378px;
+   height: auto;
    border-left: 1px solid #005AEB;
    margin-right: 6px;
    justify-content: center;
@@ -248,7 +248,21 @@ padding: 10px;
     text-align: center;
 }
 .iphone6s-img {
-    width: 125px;
+    height: 150px;
+    width: 130px;
+}
+
+.jbl-image {
+    width: 150px;
+    height: 150px;
+}
+.controller-ps4-img {
+    height: 150px;
+    width: 150px;
+}
+.razer-pro-img {
+    height: 150px;
+    width: 150px;
 }
 #produto_txt_area {
     justify-content: center;
@@ -257,8 +271,8 @@ padding: 10px;
     text-align: center;
     flex-direction: column;
 }
-.iphone6s-txt {
-    font-size: 18.5px;
+.produto-h2 {
+    font-size: 20.5px;
 }
 .star-img {
     text-align: center;

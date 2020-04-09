@@ -358,6 +358,14 @@ main {
 
 .iphone6s-img {
     width: 125px;
+    height: 147px;
+}
+.jbl-image {
+    width: 150px;
+    height: 147px;
+}
+.controller-ps4-img {
+    width: 125px;
 }
 
 #produto_txt_area {
@@ -369,9 +377,10 @@ main {
     flex-direction: column;
 }
 
-.iphone6s-txt {
+.iphone6s-txt , .jbl-txt{
     font-size: 18.5px;
 }
+
 
 .star-img {
     text-align: center;

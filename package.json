@@ -11,6 +11,7 @@
     "nodemon": "^2.0.2"
   },
   "dependencies": {
+    "bootstrap": "^4.4.1",
     "express": "^4.17.1",
     "express-handlebars": "^4.0.0"
   }
