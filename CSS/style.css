@@ -8,7 +8,6 @@ body{
 
 header {
     height: 100px;
-    background-color:#fff;
     display: flex;
     justify-content: center;
     border-bottom: 1px solid #999;
@@ -140,14 +139,14 @@ section {
 article {
     font-family: 'Sen', sans-serif;
     height: 500px;
-    background-color: #FFFFFF;
+    background-color: #5051FF;
     display: flex;
     justify-content: center;
 }
 #container_article {
     height: 500px;
     width: 1140px;
-    background-color:#FFFFFF;
+    background-color: #F4F7FD;
     display:flex;
     justify-content: center;
 }
@@ -165,7 +164,6 @@ article {
     margin-top: 20px;
     display: flex;
     width: auto;
-    padding:0px 15px;
     flex:1;
 }
 #card_article {
@@ -207,14 +205,14 @@ article {
 main {
     font-family: 'Sen', sans-serif;
     height: 600px;
-    background-color: #FFF;
+    background-color: #5051FF;
     display: flex;
     justify-content: center;
 }
 #container_main {
-    background-color: #FFF;
-    height: 550px;
-    width: 1100px;
+    background-color: #F4F7FD;
+    height: auto;
+    width: 1140px;
 }
 .main-text {
     border-bottom: 1px solid #005AEB;
@@ -237,9 +235,9 @@ main {
     padding: 10px;
    width: 255px;
    height: auto;
-   border-left: 1px solid #005AEB;
    margin-right: 6px;
    justify-content: center;
+   cursor: pointer;
 }
 .prod_img {
     max-width: 255px;
@@ -258,7 +256,7 @@ main {
 }
 .controller-ps4-img {
     height: 150px;
-    width: 150px;
+    width: 175px;
 }
 .razer-pro-img {
     height: 150px;
@@ -297,3 +295,82 @@ main {
     font-weight: 600;
 }
 /*****************************FIM DA MAIN*************************/
+/*****************************COMEÇO DA 2 ARTICLE*************************/
+#category_article {
+    background-color: #5051FF;
+    font-family: 'Sen', sans-serif;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+}
+#category_container {
+    background-color: #F4F7FD;
+    width: 1140px;
+    height: 400px;
+}
+.txt-category {
+    margin-top: 20px;
+    border-bottom: 1px solid #005AEB;
+    max-width: 1140px;
+}
+.category-h1 {
+    padding:5px;
+    letter-spacing: 1.5px;
+    color: #000472;
+    font-size: 45.5px;
+}
+#category-card-area {
+    margin-top:50px;
+    padding: 10px 0px;
+    display: flex;
+    justify-content: space-between;
+    max-width: 1100px;
+}
+#category-card {
+    justify-content: center;
+    padding:25px;
+    max-width: 250px;
+    height: 210px;
+}
+.category-img {
+    text-align: center;
+}
+.category-title {
+    text-align: center;
+}
+.computer-desktop,
+.smartphone-img,
+.ps4-controller,
+.hardware-img,
+.headset-img {
+    height: 58px;
+}
+.title-computer,
+.title-celular,
+.title-joystick,
+.title-hardware,
+.title-headset {
+    font-weight: 500;
+    text-align: center;
+    font-size: 21.5px;
+}
+.title-computer:hover {
+    color: #005AEB;
+    cursor: pointer;
+}
+.title-celular:hover {
+    color: #005AEB;
+    cursor: pointer;
+}
+.title-joystick:hover {
+    color: #005AEB;
+    cursor: pointer;
+}
+.title-hardware:hover {
+    color: #005AEB;
+    cursor: pointer;
+}
+.title-headset:hover {
+    color: #005AEB;
+    cursor: pointer;
+}
