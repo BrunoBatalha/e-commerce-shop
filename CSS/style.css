@@ -286,16 +286,13 @@
     /***********************SECTION DEPOIMENTO************************/
     #section2 {
         display:flex;
-        justify-content:flex-start;
+        justify-content:space-around;
         flex-wrap:wrap;
     }
     #section2 .depoimentos {
         margin:0 20px;
     }
-    #section2 .depoimentos .img_perfil {
-        width:180px;
-        height:200px;
-        margin:auto;
+    #section2 .depoimentos figure {
         border-radius:50%;
         overflow:hidden;
     }
@@ -310,6 +307,5 @@
         text-align:justify;
     }
     #section2 .comentarios h1 {
-        margin-top:0;
         border-bottom:1px solid #cccccc;
     }
