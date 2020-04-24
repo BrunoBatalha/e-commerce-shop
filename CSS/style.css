@@ -16,7 +16,7 @@ header {
 .container {
     display: flex;
     justify-content: space-around;
-    width: 1140px;
+    width: 1190px;
     background-color:#FFF;
 }
 .shop-logo{
@@ -54,6 +54,46 @@ nav a {
 nav a:hover{
         color: #5051FF;
 }
+
+.arrowdown {
+     margin-top: 3px;
+    margin-left: 3px;
+     position: absolute;
+     width: 15px;
+    }
+
+#menu-dropdown {
+    margin-top: 15px;
+    position: absolute;
+    height: 210px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #000;
+    border-radius: 5px;
+    background-color: #FEFDFD;
+    transition: all 0.5s;
+}
+.dpdown-item {
+    padding: 8px 12px;
+    max-width: 125px;
+    max-height: 40px;
+    display: flex;
+    line-height: 35px;
+}
+.dpdown-txt {
+    font-size: 15px;
+   margin-left: 10px;
+}
+.img-dropdown {
+    width: 27px;
+}
+.txt-drop {
+    text-align: center;
+}
+.bf-category::after {
+    background-image: url('../Images/espacador.svg');
+}
 #bottons-sign-enter {
     display: flex;
     align-items: center;
@@ -82,6 +122,16 @@ nav a:hover{
 #btm-active-home{
     color: #5051FF;
 }
+.menu_mobile {
+    display: none;
+    width: 40px;
+    height: 40px;
+}
+.mm_line {
+    height: 3px;
+    background-color:#414acc;
+
+}
 /***************************** FIM DO HEADER*************************/
 
 /*****************************ÍNICIO DA 1 SECTION*************************/
@@ -108,7 +158,8 @@ section {
 }
 .text-center {
     font-size: 60px;
-    color: #5051FF;
+    /*color: #5051FF;*/
+    color: #3864c4;
 }
 .subtext {
     font-style: italic;
@@ -139,14 +190,14 @@ section {
 article {
     font-family: 'Sen', sans-serif;
     height: 500px;
-    background-color: #5051FF;
+    background-color: #FFFCFD;
     display: flex;
     justify-content: center;
 }
 #container_article {
     height: 500px;
-    width: 1140px;
-    background-color: #F4F7FD;
+    width: 1300px;
+    background-color: #FFFCFD;
     display:flex;
     justify-content: center;
 }
@@ -155,7 +206,8 @@ article {
     flex-direction: column;
 }
 .txt-art {
-    color: #005AEB;
+    /*color: #005AEB;*/
+    color: #3864c4;
     display: flex;
     justify-content: center;
     font-size: 60px;
@@ -205,14 +257,14 @@ article {
 main {
     font-family: 'Sen', sans-serif;
     height: 600px;
-    background-color: #5051FF;
+    background-color: #FFFCFD;
     display: flex;
     justify-content: center;
 }
 #container_main {
-    background-color: #F4F7FD;
+    background-color: #FFFCFD;
     height: auto;
-    width: 1140px;
+    width: 1300px;
 }
 .main-text {
     border-bottom: 1px solid #005AEB;
@@ -220,20 +272,20 @@ main {
 }
 .main-h2-center {
     text-transform: uppercase;
-    padding: 5px;
+    padding: 15px;
     font-size: 44px;
-    letter-spacing: 1.5px;
+    letter-spacing: 2.5px;
     color:#000472;
 }
 #container_prod {
-    margin-top:15px;
+    margin-top: 15px;
     font-family: 'Heebo', sans-serif;
     display: flex;
-    flex: 1;
+    justify-content: space-around;
 }
 .prod {
     padding: 10px;
-   width: 255px;
+   max-width: 255px;
    height: auto;
    margin-right: 6px;
    justify-content: center;
@@ -297,34 +349,32 @@ main {
 /*****************************FIM DA MAIN*************************/
 /*****************************COMEÇO DA 2 ARTICLE*************************/
 #category_article {
-    background-color: #5051FF;
+    background-color: #FFFCFD;
     font-family: 'Sen', sans-serif;
     height: 400px;
     display: flex;
     justify-content: center;
 }
 #category_container {
-    background-color: #F4F7FD;
-    width: 1140px;
+    background-color: #FFFCFD;
+    width: 1300px;
     height: 400px;
 }
 .txt-category {
     margin-top: 20px;
     border-bottom: 1px solid #005AEB;
-    max-width: 1140px;
 }
 .category-h1 {
-    padding:5px;
-    letter-spacing: 1.5px;
+    padding:15px;
+    letter-spacing: 2.5px;
     color: #000472;
-    font-size: 45.5px;
+    font-size: 44px;
 }
 #category-card-area {
     margin-top:50px;
     padding: 10px 0px;
     display: flex;
-    justify-content: space-between;
-    max-width: 1100px;
+    justify-content: space-around;
 }
 #category-card {
     justify-content: center;
@@ -373,4 +423,123 @@ main {
 .title-headset:hover {
     color: #005AEB;
     cursor: pointer;
+}
+/*****************************FIM DA 2º ARTICLE*************************/
+
+
+
+
+
+
+
+
+
+
+
+/*****************************ÍNICIO DO RESPONSIVO*************************/
+@media(max-width:968px) {
+    header {
+        height: 100px;
+    }
+    nav ul {
+        display: none;
+    }
+    #bottons-sign-enter {
+        display: none;
+    }
+    .menu_mobile {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    /****SECTION****/
+    section {
+        height: 400px;
+    }
+    #container_section {
+        height: 400px;
+    }
+    #sec_text {
+        margin-left: 25px;
+        align-items: center;
+        /* margin-top: 25px; */
+        max-width: 915px;
+    }
+    .text-center {
+        font-size: 60px;
+        color: #3864c4;
+    }
+    .subtext {
+        font-style: italic;
+        font-weight: 500;
+        font-size: 23.5px;
+        color: #FFFFFF;
+    }
+    #btn-sec {
+        margin-top: 35px;
+        margin-left: 250px;
+        text-align: center;
+        border: 1px solid #0064FF;
+        font-size: 20px;
+        background-color: #5051FF;
+        border-radius: 7px;
+        padding: 10px;
+        color: #FFF;
+        font-weight: 200;
+        display: inline-block;
+    }
+    /****ARTICLE****/
+    article {
+        height: auto;
+    }
+    .txt-art {
+        font-size: 50px;
+    }
+    .carrinho {
+        margin-top: 15px;
+        height: 60px;
+        width: 60px;
+    }
+    .caminhao {
+        margin-top: 15px;
+        height: 60px;
+        width: 60px;
+    }
+    .cartao {
+        margin-top: 15px;
+        height: 60px;
+        width: 60px;
+    }
+    .carrinho-text, .caminhao-text, .cartao-text {
+        color: #4A55E8;
+        font-size: 22px;
+    }
+    /****ARTICLE****/
+    /****MAIN****/
+    .main-h2-center {
+        text-transform: uppercase;
+        padding: 15px;
+        font-size: 40px;
+        letter-spacing: 2.5px;
+        color: #000472;
+    }
+    .category-h1 {
+        padding: 15px;
+        letter-spacing: 2.5px;
+        color: #000472;
+        font-size: 40px;
+    }
+    .produto-h2 {
+        font-size: 18.5px;
+    }
+    .produto-starimg {
+        height: 15px;
+        padding: 0px 5px;
+    }
+    .prod-sbtxt {
+        font-size: 13.5px;
+        margin-bottom: 6px;
+        margin-top: 6px;
+        font-weight: 500;
+    }
 }

@@ -25,6 +25,14 @@
             </div>
             <div class="menu-header">
                 <nav>
+                    <div class="menu_mobile">
+                        <div class="mm_line">
+                        </div>
+                        <div class="mm_line">
+                        </div>
+                        <div class="mm_line">
+                        </div>
+                    </div>
                     <ul>
                         <a href="#">
                             <li id="btm-active-home">Ínicio</li>
@@ -33,24 +41,42 @@
                             <li>Sobre</li>
                         </a>
                         <a href="#">
-                            <li>Contato</li>
-                        </a>
-                        <a href="#">
-                            <li>Meu carrinho</li>
+                            <li class="bf-category">Categorias
+                            <img class="arrowdown" src="Images/arrow-down.svg">
+
+                            </li>
+                            <div id="menu-dropdown">
+                                <div class="dpdown-item">
+                                    <img class="img-dropdown" src="Images/cpu.svg"/>
+                                    <span class="dpdown-txt">Hardwares</span>
+                                </div>
+                                <div class="dpdown-item">
+                                    <img class="img-dropdown" src="Images/camera1.svg"/>
+                                    <span class="dpdown-txt">Câmeras</span>
+                                </div>
+                                <div class="dpdown-item">
+                                    <img class="img-dropdown" src="Images/headphones1.svg"/>
+                                    <span class="dpdown-txt">Headsets</span>
+                                </div>
+                                <div class="dpdown-item">
+                                    <img class="img-dropdown" src="Images/smartphone1.svg"/>
+                                    <span class="dpdown-txt">Celulares</span>
+                                </div>
+                            </div>
                         </a>
                     </ul>
                 </nav>
                 <!------------FIM DA LISTA----------->
             </div>
-        </div>
-        <div id="bottons-sign-enter">
-            <a href="#">
-                <h3 id="enter">Entrar</h3>
-            </a>
-            <a href="#">
-                <h3 id="sign">Cadastrar-se</h3>
-            </a>
-        </div>
+            <div id="bottons-sign-enter">
+                <a href="#">
+                    <h3 id="enter">Entrar</h3>
+                </a>
+                <a href="#">
+                    <h3 id="sign">Cadastrar-se</h3>
+                </a>
+            </div>
+            </div>
         </div>
     </header>
     <!------------FIM DO HEADER----------->
@@ -72,52 +98,6 @@
         </div>
     </section>
     <!------------FIM DA SECTION----------->
-    <!------------ÍNICIO DO ARTICLE----------->
-    <article>
-        <div id="container_article">
-            <div class="text-article-area">
-                <div class="text-center-art">
-                    <h1 class="txt-art">Por quê comprar na Shop?</h1>
-                </div>
-                <div id="card_article_area">
-                    <div id="card_article">
-                        <div class="card_image">
-                            <img class="carrinho" src="Images/supermarket1.svg" alt="carrinho" />
-                            <h3 class="carrinho-text">Frete grátis</h3>
-                        </div>
-                        <div id="card_text">
-                            <p class="card-text">Nas compras acima de <b>R$100,00</b> você
-                                tem direito a um <b>frete grátis</b>.</p>
-                        </div>
-                    </div>
-                    <div id="card_article">
-                        <div class="card_image">
-                            <img class="caminhao" src="Images/truck1.svg" alt="carrinho" />
-                            <h3 class="caminhao-text">Envio imediato</h3>
-                        </div>
-                        <div id="card_text">
-                            <p class="card-text">Todos nossos itens é a pronta entrega com envio imediato,
-                                de até <b>24H</b>.
-
-                            </p>
-                        </div>
-                    </div>
-                    <div id="card_article">
-                        <div class="card_image">
-                            <img class="cartao" src="Images/check1.svg" alt="carrinho" />
-                            <h3 class="cartao-text">Aceitamos todos cartões</h3>
-                        </div>
-                        <div id="card_text">
-                            <p class="card-text">Aceitamos todos os tipos de cartões de crédito,
-                                agora também exclusivamente o <b>Nubank</b>.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </article>
-    <!------------FIM DO ARTICLE----------->
     <!------------ÍNICIO DO MAIN----------->
     <main>
         <div id="container_main">
@@ -217,51 +197,45 @@
         </div>
     </main>
     <!------------FIM DO MAIN------------->
-    <!------------ÍNICIO DA 2º SECTIon------------->
-    <article id="category_article">
-        <div id="category_container">
-            <div class="txt-category">
-                <h1 class="category-h1">CATEGORIAS</h1>
-            </div>
-            <div id="category-card-area">
-                <div id="category-card">
-                    <div class="category-img">
-                        <img class="computer-desktop" src="Images/Computer.svg" alt="computer">
-                    </div>
-                    <div class="category-title">
-                        <h3 class="title-computer">Computadores</h3>
-                    </div>
+    <article>
+        <div id="container_article">
+            <div class="text-article-area">
+                <div class="text-center-art">
+                    <h1 class="txt-art">Por quê comprar na Shop?</h1>
                 </div>
-                <div id="category-card">
-                    <div class="category-img">
-                        <img class="smartphone-img" src="Images/smartphone1.svg" alt="smartphone">
+                <div id="card_article_area">
+                    <div id="card_article">
+                        <div class="card_image">
+                            <img class="carrinho" src="Images/supermarket1.svg" alt="carrinho" />
+                            <h3 class="carrinho-text">Frete grátis</h3>
+                        </div>
+                        <div id="card_text">
+                            <p class="card-text">Nas compras acima de <b>R$100,00</b> você
+                                tem direito a um <b>frete grátis</b>.</p>
+                        </div>
                     </div>
-                    <div class="category-title">
-                        <h3 class="title-celular">Celulares</h3>
+                    <div id="card_article">
+                        <div class="card_image">
+                            <img class="caminhao" src="Images/truck1.svg" alt="carrinho" />
+                            <h3 class="caminhao-text">Envio imediato</h3>
+                        </div>
+                        <div id="card_text">
+                            <p class="card-text">Todos nossos itens é a pronta entrega com envio imediato,
+                                de até <b>24H</b>.
+
+                            </p>
+                        </div>
                     </div>
-                </div>
-                <div id="category-card">
-                    <div class="category-img">
-                        <img class="ps4-controller" src="Images/ps4.svg" alt="joystick">
-                    </div>
-                    <div class="category-title">
-                        <h3 class="title-joystick">Joysticks</h3>
-                    </div>
-                </div>
-                <div id="category-card">
-                    <div class="category-img">
-                        <img class="hardware-img" src="Images/cpu.svg" alt="hardware">
-                    </div>
-                    <div class="category-title">
-                        <h3 class="title-hardware">Hardwares</h3>
-                    </div>
-                </div>
-                <div id="category-card">
-                    <div class="category-img">
-                        <img class="headset-img" src="Images/fones-de-ouvido.svg" alt="headsets">
-                    </div>
-                    <div class="category-title">
-                        <h3 class="title-headset">Headsets</h3>
+                    <div id="card_article">
+                        <div class="card_image">
+                            <img class="cartao" src="Images/check1.svg" alt="carrinho" />
+                            <h3 class="cartao-text">Aceitamos todos cartões</h3>
+                        </div>
+                        <div id="card_text">
+                            <p class="card-text">Aceitamos todos os tipos de cartões de crédito,
+                                agora também exclusivamente o <b>Nubank</b>.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>

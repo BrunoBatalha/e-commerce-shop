@@ -216,7 +216,6 @@ section {
 /*****************************FIM DA 1 SECTION*************************/
 
 /*****************************ÍNICIO DO ARTICLE*************************/
-
 article {
     display: flex;
     justify-content: center;
@@ -300,20 +299,6 @@ main {
     display: flex;
     justify-content: center;
 }
-@media (max-width:1037px){
-    main{
-        margin-top: 80px;
-    }
-}
-@media (max-width:739px){
-    #card_article_area{
-        display: block;
-    }
-    #container_prod{
-        display: flex;
-        flex-direction: column
-    }
-}
 #container_main {
     background-color: #FFF;
     height: 550px;
@@ -348,7 +333,6 @@ main {
     margin-right: 6px;
     justify-content: center;
 }
-
 .prod_img {
     max-width: 255px;
     padding: 15px;
