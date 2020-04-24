@@ -63,11 +63,12 @@ nav a:hover{
     }
 
 #menu-dropdown {
-    margin-top: 15px;
+    display: none;
+    margin-top: 50px;
+    margin-left: 160px;
     position: absolute;
     height: 210px;
     width: 250px;
-    display: flex;
     flex-direction: column;
     border: 1px solid #000;
     border-radius: 5px;
@@ -82,17 +83,18 @@ nav a:hover{
     line-height: 35px;
 }
 .dpdown-txt {
+    cursor: pointer;
     font-size: 15px;
    margin-left: 10px;
+}
+.dpdown-txt:hover {
+    color: #5051FF;
 }
 .img-dropdown {
     width: 27px;
 }
 .txt-drop {
     text-align: center;
-}
-.bf-category::after {
-    background-image: url('../Images/espacador.svg');
 }
 #bottons-sign-enter {
     display: flex;
