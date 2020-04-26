@@ -1,0 +1,68 @@
+/*
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #EEEEEE;
+}
+
+.header {
+    height: 200px;
+    width: 100%;
+    background-color: #dddeee;
+}
+
+*/
+
+.container-carrossel {
+    width: 100%;
+    margin: auto;
+    background-color: #F5F5F5;
+    margin: 30px 0;
+}
+
+.responsive {
+    /*width: 1200px;*/
+    margin: auto;
+    display: flex;
+}
+
+.item {
+    text-align: center;
+}
+.item img {
+    width: 90%;
+    margin: auto;
+}
+
+@media (min-width: 1200px) {
+    .responsive {
+        width: 1200px;
+    }
+}
+
+/* DOTS ------------------------------------------- */
+ul.slick-dots {
+    list-style-type: none;
+    text-align: center;
+}
+ul.slick-dots li {
+    display: inline-block;
+    margin: 10px;
+}
+
+/* BOTÕES ------------------------------------------ */
+
+.slick-prev {
+    font-size: 30px;
+    color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0,0,0,0);
+    border: none;
+}
+
+.slick-next {
+    font-size: 30px;
+    color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0,0,0,0);
+    border: none;
+}
