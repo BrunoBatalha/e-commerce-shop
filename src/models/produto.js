@@ -17,6 +17,10 @@ const Produto = new Schema({
     categoria: {
         type:String,
         required:true
+    }, 
+    destaque: {
+        type:Boolean,
+        required:true
     }
 });
 
