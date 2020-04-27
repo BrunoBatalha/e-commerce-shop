@@ -216,6 +216,7 @@ section {
 /*****************************FIM DA 1 SECTION*************************/
 
 /*****************************ÍNICIO DO ARTICLE*************************/
+
 article {
     display: flex;
     justify-content: center;
@@ -299,6 +300,20 @@ main {
     display: flex;
     justify-content: center;
 }
+@media (max-width:1037px){
+    main{
+        margin-top: 80px;
+    }
+}
+@media (max-width:739px){
+    #card_article_area{
+        display: block;
+    }
+    #container_prod{
+        display: flex;
+        flex-direction: column
+    }
+}
 #container_main {
     background-color: #FFF;
     height: 550px;
@@ -333,6 +348,7 @@ main {
     margin-right: 6px;
     justify-content: center;
 }
+
 .prod_img {
     max-width: 255px;
     padding: 15px;
@@ -341,14 +357,6 @@ main {
 }
 
 .iphone6s-img {
-    width: 125px;
-    height: 147px;
-}
-.jbl-image {
-    width: 150px;
-    height: 147px;
-}
-.controller-ps4-img {
     width: 125px;
 }
 
@@ -361,10 +369,9 @@ main {
     flex-direction: column;
 }
 
-.iphone6s-txt , .jbl-txt{
+.iphone6s-txt {
     font-size: 18.5px;
 }
-
 
 .star-img {
     text-align: center;

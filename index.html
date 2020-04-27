@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <style>
         @import url('https://fonts.googleapis.com/css?family=Sen&display=swap');
@@ -10,12 +11,15 @@
         @import url('https://fonts.googleapis.com/css?family=Lato|Roboto&display=swap');
     </style>
     <link href="CSS/style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="CSS/slick.css">
+    <link rel="stylesheet" href="CSS/carrossel.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css"
         integrity="sha384-v8BU367qNbs/aIZIxuivaU55N5GPF89WBerHoGA4QTcbUjYiLQtKdrfXnqAcXyTv" crossorigin="anonymous">
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Loja virtual SHOP</title>
 </head>
+
 <body>
     <!------------ÍNICIO DO HEADER----------->
     <header>
@@ -25,14 +29,6 @@
             </div>
             <div class="menu-header">
                 <nav>
-                    <div class="menu_mobile">
-                        <div class="mm_line">
-                        </div>
-                        <div class="mm_line">
-                        </div>
-                        <div class="mm_line">
-                        </div>
-                    </div>
                     <ul>
                         <a href="#">
                             <li id="btm-active-home">Ínicio</li>
@@ -63,25 +59,24 @@
                                     <span class="dpdown-txt">Celulares</span>
                                 </div>
                             </div>
-                        </a>
                     </ul>
                 </nav>
                 <!------------FIM DA LISTA----------->
             </div>
-            <div id="bottons-sign-enter">
-                <a href="#">
-                    <h3 id="enter">Entrar</h3>
-                </a>
-                <a href="#">
-                    <h3 id="sign">Cadastrar-se</h3>
-                </a>
-            </div>
-            </div>
+        </div>
+        <div id="bottons-sign-enter">
+            <a href="#">
+                <h3 id="enter">Entrar</h3>
+            </a>
+            <a href="#">
+                <h3 id="sign">Cadastrar-se</h3>
+            </a>
+        </div>
         </div>
     </header>
     <!------------FIM DO HEADER----------->
     <!------------ÍNICIO DA SECTION----------->
-    <section>
+    <section id="section1">
         <div id="container_section">
             <div id="sec_text">
                 <h1 class="text-center">A loja Shop em suas mãos!</h1>
@@ -98,105 +93,125 @@
         </div>
     </section>
     <!------------FIM DA SECTION----------->
-    <!------------ÍNICIO DO MAIN----------->
-    <main>
-        <div id="container_main">
-            <div class="main-text">
-                <h2 class="main-h2-center">EM DESTAQUE</h2>
+     <!-- inicio do carrossel -->
+    
+     <div class="carrossel">
+
+        <h2>EM DESTAQUE</h2>
+        <hr>
+
+        <div class="responsive">
+
+            <div class="item">
+                <img src="Images/iphone6s.png" class="produto">
+                <hr>
+                <h2>iPhone 6S 128GB</h2>
+
+                <div class="avaliacao">
+                    <img src="Images/star2.svg" alt="star" />
+                    <img src="Images/star2.svg" alt="star" />
+                    <img src="Images/star2.svg" alt="star" />
+                    <img src="Images/star.svg" alt="star" />
+                    <img src="Images/star.svg" alt="star" />
+                </div>
+
+                <span>15 ofertas à partir de</span><br>
+                <span class="preco">R$950,00</span><br>
+                <span>10x de R$95,00 sem juros</span>
             </div>
-            <div id="container_prod">
-                <div class="prod">
-                    <div class="prod_img">
-                        <img class="iphone6s-img" src="Images/iphone6s.png" alt="iphone" />
-                    </div>
-                    <div id="produto_txt_area">
-                        <div class="produto_txt">
-                            <h2 class="produto-h2">Iphone 6S 128GB</h2>
-                        </div>
-                        <div class="star-img">
-                            <img class="produto-starimg" src="Images/star2.svg" alt="star" />
-                            <img class="produto-starimg" src="Images/star2.svg" alt="star" />
-                            <img class="produto-starimg" src="Images/star2.svg" alt="star" />
-                            <img class="produto-starimg" src="Images/star2.svg" alt="star" />
-                            <img class="produto-starimg" src="Images/star2.svg" alt="star" />
-                        </div>
-                        <div class="produto-sbtxt">
-                            <p class="prod-sbtxt">15 ofertas á partir de<br>
-                                <span class="sbtxt-price">R$950,00</span><br>
-                                10x de R$95,00 sem juros</p>
-                        </div>
-                    </div>
+
+            <div class="item">
+                <img src="Images/iphone6s.png" class="produto">
+                <hr>
+                <h2>iPhone 6S 128GB</h2>
+
+                <div class="avaliacao">
+                    <img src="Images/star2.svg" alt="star" />
+                    <img src="Images/star2.svg" alt="star" />
+                    <img src="Images/star2.svg" alt="star" />
+                    <img src="Images/star.svg" alt="star" />
+                    <img src="Images/star.svg" alt="star" />
                 </div>
-                <div class="prod">
-                    <div class="prod_img">
-                        <img class="jbl-image" src="Images/fone-jbl.png" alt="JBL"/>
-                    </div>
-                    <div id="produto_txt_area">
-                        <div class="produto_txt">
-                            <h2 class="produto-h2"> JBL Synchros </h2>
-                        </div>
-                        <div class="star-img">
-                            <img class="produto-starimg" src="Images/star2.svg" alt="star" />
-                            <img class="produto-starimg" src="Images/star2.svg" alt="star" />
-                            <img class="produto-starimg" src="Images/star2.svg" alt="star" />
-                            <img class="produto-starimg" src="Images/star2.svg" alt="star" />
-                            <img class="produto-starimg" src="Images/star.svg" alt="star" />
-                        </div>
-                        <div class="produto-sbtxt">
-                            <p class="prod-sbtxt">7 ofertas á partir de<br>
-                                <span class="sbtxt-price">R$600,00</span><br>
-                                10x de R$60,00 sem juros</p>
-                        </div>
-                    </div>
+
+                <span>15 ofertas à partir de</span><br>
+                <span class="preco">R$950,00</span><br>
+                <span>10x de R$95,00 sem juros</span>
+            </div>
+
+            <div class="item">
+                <img src="Images/iphone6s.png" class="produto">
+                <hr>
+                <h2>iPhone 6S 128GB</h2>
+
+                <div class="avaliacao">
+                    <img src="Images/star2.svg" alt="star" />
+                    <img src="Images/star2.svg" alt="star" />
+                    <img src="Images/star2.svg" alt="star" />
+                    <img src="Images/star.svg" alt="star" />
+                    <img src="Images/star.svg" alt="star" />
                 </div>
-                <div class="prod">
-                    <div class="prod_img">
-                        <img class="controller-ps4-img" src="Images/ps4.png" alt="iphone" />
-                    </div>
-                    <div id="produto_txt_area">
-                        <div class="produto_txt">
-                            <h2 class="produto-h2">Controle PS4 camuflado</h2>
-                        </div>
-                        <div class="star-img">
-                            <img class="produto-starimg" src="Images/star2.svg" alt="star" />
-                            <img class="produto-starimg" src="Images/star2.svg" alt="star" />
-                            <img class="produto-starimg" src="Images/star2.svg" alt="star" />
-                            <img class="produto-starimg" src="Images/star2.svg" alt="star" />
-                            <img class="produto-starimg" src="Images/star2.svg" alt="star" />
-                        </div>
-                        <div class="produto-sbtxt">
-                            <p class="prod-sbtxt">1 oferta á partir de<br>
-                                <span class="sbtxt-price">R$325,00</span><br>
-                                10x de R$32,50 sem juros</p>
-                        </div>
-                    </div>
+
+                <span>15 ofertas à partir de</span><br>
+                <span class="preco">R$950,00</span><br>
+                <span>10x de R$95,00 sem juros</span>
+            </div>
+
+            <div class="item">
+                <img src="Images/iphone6s.png" class="produto">
+                <hr>
+                <h2>iPhone 6S 128GB</h2>
+
+                <div class="avaliacao">
+                    <img src="Images/star2.svg" alt="star" />
+                    <img src="Images/star2.svg" alt="star" />
+                    <img src="Images/star2.svg" alt="star" />
+                    <img src="Images/star.svg" alt="star" />
+                    <img src="Images/star.svg" alt="star" />
                 </div>
-                <div class="prod">
-                    <div class="prod_img">
-                        <img class="razer-pro-img" src="Images/razer-pro.jpg" alt="iphone" />
-                    </div>
-                    <div id="produto_txt_area">
-                        <div class="produto_txt">
-                            <h2 class="produto-h2">Razer Kraken PRO V2</h2>
-                        </div>
-                        <div class="star-img">
-                            <img class="produto-starimg" src="Images/star2.svg" alt="star" />
-                            <img class="produto-starimg" src="Images/star2.svg" alt="star" />
-                            <img class="produto-starimg" src="Images/star.svg" alt="star" />
-                            <img class="produto-starimg" src="Images/star.svg" alt="star" />
-                            <img class="produto-starimg" src="Images/star.svg" alt="star" />
-                        </div>
-                        <div class="produto-sbtxt">
-                            <p class="prod-sbtxt">4 ofertas á partir de<br>
-                                <span class="sbtxt-price">R$800,00</span><br>
-                                10x de R$80,00 sem juros</p>
-                        </div>
-                    </div>
+
+                <span>15 ofertas à partir de</span><br>
+                <span class="preco">R$950,00</span><br>
+                <span>10x de R$95,00 sem juros</span>
+            </div>
+
+            <div class="item">
+                <img src="Images/iphone6s.png" class="produto">
+                <hr>
+                <h2>iPhone 6S 128GB</h2>
+
+                <div class="avaliacao">
+                    <img src="Images/star2.svg" alt="star" />
+                    <img src="Images/star2.svg" alt="star" />
+                    <img src="Images/star2.svg" alt="star" />
+                    <img src="Images/star.svg" alt="star" />
+                    <img src="Images/star.svg" alt="star" />
                 </div>
+
+                <span>15 ofertas à partir de</span><br>
+                <span class="preco">R$950,00</span><br>
+                <span>10x de R$95,00 sem juros</span>
+            </div>
+
+            <div class="item">
+                <img src="Images/iphone6s.png" class="produto">
+                <hr>
+                <h2>iPhone 6S 128GB</h2>
+
+                <div class="avaliacao">
+                    <img src="Images/star2.svg" alt="star" />
+                    <img src="Images/star2.svg" alt="star" />
+                    <img src="Images/star2.svg" alt="star" />
+                    <img src="Images/star.svg" alt="star" />
+                    <img src="Images/star.svg" alt="star" />
+                </div>
+
+                <span>15 ofertas à partir de</span><br>
+                <span class="preco">R$950,00</span><br>
+                <span>10x de R$95,00 sem juros</span>
             </div>
         </div>
-    </main>
-    <!------------FIM DO MAIN------------->
+    </div>
+    <!------------ÍNICIO DO ARTICLE----------->
     <article>
         <div id="container_article">
             <div class="text-article-area">
@@ -241,6 +256,75 @@
             </div>
         </div>
     </article>
-    <script type="text/javascript" src="JS/script-header.js"></script>
+    <!------------FIM DO ARTICLE----------->
+    <!--------SECTION DEPOIMENTOS--------->
+    <section id="section-group">
+        <div id="group_container">
+        <div id="text_group">
+            <h1 class="text_gp_center">Conheça nossa equipe</h1>
+        </div>
+        <div id="people_area">
+        <div class="group_people">
+            <div class="people_image">
+                <img class="user-image" src="Images/user-1.png">
+            </div>
+            <div class="people_name">
+                <h2 class="name-h2">Fernando Freitas</h2>
+            </div>
+            <div class="people_desc">
+                <p class="desc-p">Fernando é um desenvolvedor front-end iniciante, idealizador do projeto e SEO da Nasa.</p>
+            </div>
+        </div>
+        <div class="group_people">
+            <div class="people_image">
+                <img class="user-image" src="Images/user-1.png">
+            </div>
+            <div class="people_name">
+                <h2 class="name-h2">Fernando Freitas</h2>
+            </div>
+            <div class="people_desc">
+                <p class="desc-p">Fernando é um desenvolvedor front-end iniciante, idealizador do projeto e SEO da Nasa.</p>
+            </div>
+        </div>
+        <div class="group_people">
+            <div class="people_image">
+                <img class="user-image" src="Images/user-1.png">
+            </div>
+            <div class="people_name">
+                <h2 class="name-h2">Fernando Freitas</h2>
+            </div>
+            <div class="people_desc">
+                <p class="desc-p">Fernando é um desenvolvedor front-end iniciante, idealizador do projeto e SEO da Nasa.</p>
+            </div>
+        </div>
+        <div class="group_people">
+            <div class="people_image">
+                <img class="user-image" src="Images/user-1.png">
+            </div>
+            <div class="people_name">
+                <h2 class="name-h2">Fernando Freitas</h2>
+            </div>
+            <div class="people_desc">
+                <p class="desc-p">Fernando é um desenvolvedor front-end iniciante, idealizador do projeto e SEO da Nasa.</p>
+            </div>
+        </div>
+        <div class="group_people">
+            <div class="people_image">
+                <img class="user-image" src="Images/user-1.png">
+            </div>
+            <div class="people_name">
+                <h2 class="name-h2">Fernando Freitas</h2>
+            </div>
+            <div class="people_desc">
+                <p class="desc-p">Fernando é um desenvolvedor front-end iniciante, idealizador do projeto e SEO da Nasa.</p>
+            </div>
+        </div>
+        </div>
+        </div>
+    </section>
+    <script src="JS/jquery-3.5.0.min.js"></script>
+    <script src="JS/slick.min.js"></script>
+    <script src="JS/carrossel.js"></script>
+    <script src="JS/script-header.js"></script>
 </body>
 </html>
