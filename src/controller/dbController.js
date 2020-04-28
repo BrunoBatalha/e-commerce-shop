@@ -3,7 +3,7 @@ const Produto = require('../models/produto');
 
 exports.save = async (req,res) => {
     try{
-        const produto = new Produto(req.body).save();
+        const produto = await new Produto(req.body).save();
         res.send("Dados salvos com sucesso: "+produto);
     }catch(err) {
         res.send("Erro ao salvar: "+err);

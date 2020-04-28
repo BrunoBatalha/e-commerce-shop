@@ -5,7 +5,6 @@
         font-family: Arial, Helvetica, sans-serif;
     }
     /**********************HEADER*********************/
-
     header {
         height: 100px;
         background-color:#fff;
@@ -98,6 +97,7 @@
 .txt-drop {
    text-align: center;
 }
+
     #bottons-sign-enter {
         display: flex;
         align-items: center;
@@ -246,57 +246,112 @@
         font-style: italic;
     }
     /*****************************FIM DO ARTICLE*************************/
-    /***********************SECTION DEPOIMENTO************************/
-    #section-group {
-        margin-top:  30px;
+
+    /*****************************ÍNICIO DA MAIN*************************/
+    /*
+    main {
         font-family: 'Sen', sans-serif;
+        height: 550px;
+        background-color: #FFF;
         display: flex;
         justify-content: center;
-        height: 500px;
     }
-    #text_group {
-        text-align: center;
+    #container_main {
+        background-color: #FFF;
+        height: 550px;
+        width: 1100px;
     }
-    .text_gp_center {
+    .main-text {
+        border-bottom: 1px solid #005AEB;
+        align-items: flex-start;
+    }
+    .main-h2-center {
+        text-transform: uppercase;
+        padding: 5px;
+        font-size: 44px;
+        letter-spacing: 1.5px;
         color:#000472;
-        font-size: 45px;
     }
-    #group_container {
-        height: 500px;
-        width: 1380px;
-    }
-    #people_area {
-        margin-top: 60px;
+    #container_prod {
+        margin-top:15px;
+        font-family: 'Heebo', sans-serif;
         display: flex;
-        justify-content: space-around;
+        flex: 1;
     }
-    .group_people {
-        border-radius: 12px;
-        background-color: #FDFDFD;
-        box-shadow: 0px 1px #5051FF;
+    .prod {
+    padding: 10px;
+    width: 255px;
+    height: 378px;
+    border-left: 1px solid #005AEB;
+    margin-right: 6px;
+    justify-content: center;
+    }
+    .prod_img {
+        max-width: 255px;
         padding: 15px;
-        border: 1px solid #CCC;
-        height: 300px;
-        max-width: 225px;
+        border-bottom: 1px solid #999;
         text-align: center;
     }
-    .people_image {
+    .iphone6s-img {
+        width: 125px;
+    }
+    #produto_txt_area {
+        justify-content: center;
+    }
+    .produto_txt {
         text-align: center;
-        border-bottom: 1px solid rgb(49, 24, 117);
+        flex-direction: column;
     }
-    .people_desc, .people_name {
+    .iphone6s-txt {
+        font-size: 18.5px;
+    }
+    .star-img {
         text-align: center;
     }
-    .user-image {
-        height: 125px;
+    .produto-starimg {
+        text-align: center;
+        margin:auto;
+        padding: 0px 7px;
+        height: 20px;
     }
-    .name-h2 {
-        font-size: 26px;
+    .produto-sbtxt {
+        padding: 15px;
     }
-    .desc-p {
-        font-size: 15px;
+    .prod-sbtxt {
+        font-size: 15.5px;
+        margin-bottom: 6px;
+        margin-top: 6px;
+        font-weight: 500;
     }
-    .group_people:hover {
-        cursor: pointer;
-        box-shadow: 0px 0px 6px #064ff2;
+    .sbtxt-price {
+        font-size: 24px;
+        font-weight: 600;
+    }
+    */
+    /*****************************FIM DA MAIN*************************/
+    /***********************SECTION DEPOIMENTO************************/
+    #section2 {
+        display:flex;
+        justify-content:space-around;
+        flex-wrap:wrap;
+    }
+    #section2 .depoimentos {
+        margin:0 20px;
+    }
+    #section2 .depoimentos figure {
+        border-radius:50%;
+        overflow:hidden;
+    }
+    #section2 .comentarios {
+        width:280px;
+        height:220px;
+        padding:20px;
+        padding-top:0;
+        border:1px solid #cccccc;
+        margin:15px auto;
+        box-shadow: 4px 4px 10px;
+        text-align:justify;
+    }
+    #section2 .comentarios h1 {
+        border-bottom:1px solid #cccccc;
     }
