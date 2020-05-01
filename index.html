@@ -93,15 +93,17 @@
         </div>
     </section>
     <!------------FIM DA SECTION----------->
-     <!-- inicio do carrossel -->
     
-     <div class="carrossel">
+    <!-- inicio do carrossel -->
+    
+    <div class="carrossel">
 
         <h2>EM DESTAQUE</h2>
         <hr>
 
         <div class="responsive">
 
+            <!--
             <div class="item">
                 <img src="Images/iphone6s.png" class="produto">
                 <hr>
@@ -119,98 +121,23 @@
                 <span class="preco">R$950,00</span><br>
                 <span>10x de R$95,00 sem juros</span>
             </div>
+            -->
 
-            <div class="item">
-                <img src="Images/iphone6s.png" class="produto">
-                <hr>
-                <h2>iPhone 6S 128GB</h2>
-
-                <div class="avaliacao">
-                    <img src="Images/star2.svg" alt="star" />
-                    <img src="Images/star2.svg" alt="star" />
-                    <img src="Images/star2.svg" alt="star" />
-                    <img src="Images/star.svg" alt="star" />
-                    <img src="Images/star.svg" alt="star" />
-                </div>
-
-                <span>15 ofertas à partir de</span><br>
-                <span class="preco">R$950,00</span><br>
-                <span>10x de R$95,00 sem juros</span>
-            </div>
-
-            <div class="item">
-                <img src="Images/iphone6s.png" class="produto">
-                <hr>
-                <h2>iPhone 6S 128GB</h2>
-
-                <div class="avaliacao">
-                    <img src="Images/star2.svg" alt="star" />
-                    <img src="Images/star2.svg" alt="star" />
-                    <img src="Images/star2.svg" alt="star" />
-                    <img src="Images/star.svg" alt="star" />
-                    <img src="Images/star.svg" alt="star" />
-                </div>
-
-                <span>15 ofertas à partir de</span><br>
-                <span class="preco">R$950,00</span><br>
-                <span>10x de R$95,00 sem juros</span>
-            </div>
-
-            <div class="item">
-                <img src="Images/iphone6s.png" class="produto">
-                <hr>
-                <h2>iPhone 6S 128GB</h2>
-
-                <div class="avaliacao">
-                    <img src="Images/star2.svg" alt="star" />
-                    <img src="Images/star2.svg" alt="star" />
-                    <img src="Images/star2.svg" alt="star" />
-                    <img src="Images/star.svg" alt="star" />
-                    <img src="Images/star.svg" alt="star" />
-                </div>
-
-                <span>15 ofertas à partir de</span><br>
-                <span class="preco">R$950,00</span><br>
-                <span>10x de R$95,00 sem juros</span>
-            </div>
-
-            <div class="item">
-                <img src="Images/iphone6s.png" class="produto">
-                <hr>
-                <h2>iPhone 6S 128GB</h2>
-
-                <div class="avaliacao">
-                    <img src="Images/star2.svg" alt="star" />
-                    <img src="Images/star2.svg" alt="star" />
-                    <img src="Images/star2.svg" alt="star" />
-                    <img src="Images/star.svg" alt="star" />
-                    <img src="Images/star.svg" alt="star" />
-                </div>
-
-                <span>15 ofertas à partir de</span><br>
-                <span class="preco">R$950,00</span><br>
-                <span>10x de R$95,00 sem juros</span>
-            </div>
-
-            <div class="item">
-                <img src="Images/iphone6s.png" class="produto">
-                <hr>
-                <h2>iPhone 6S 128GB</h2>
-
-                <div class="avaliacao">
-                    <img src="Images/star2.svg" alt="star" />
-                    <img src="Images/star2.svg" alt="star" />
-                    <img src="Images/star2.svg" alt="star" />
-                    <img src="Images/star.svg" alt="star" />
-                    <img src="Images/star.svg" alt="star" />
-                </div>
-
-                <span>15 ofertas à partir de</span><br>
-                <span class="preco">R$950,00</span><br>
-                <span>10x de R$95,00 sem juros</span>
-            </div>
         </div>
     </div>
+
+    <div class="produtoWindowArea">
+        <div class="produtoWindowBody">
+            <img src="Images/iphone6s.png" width="300px" alt="">
+            <h2>iPhone 6S 128GB</h2>
+            <span>R$1.500,00</span>
+            <a class="btnComprar" href="comprar.html">Comprar</a>
+            <button class="btnVoltar">Voltar</button>
+        </div>
+    </div>
+
+    <!-- fim do carressel -->
+
     <!------------ÍNICIO DO ARTICLE----------->
     <article>
         <div id="container_article">
@@ -346,5 +273,102 @@
     <script src="JS/slick.min.js"></script>
     <script src="JS/carrossel.js"></script>
     <script src="JS/script-header.js"></script>
+
+    <!-- temporário, apenas enquanto os produtos não vieram do banco de dados -->
+    <script>
+
+        let produtos = [
+            {id: 1, titulo: 'iPhone 6S 128GB', preco: 950, foto: 'iphone6s.png', avaliacao: 5, parcelamento: 10, juros: 0, ofertas: 15},
+            {id: 2, titulo: 'iPhone 6S 64GB', preco: 800, foto: 'iphone6s.png', avaliacao: 3, parcelamento: 10, juros: 0, ofertas: 6},
+            {id: 3, titulo: 'iPhone 6S 256GB', preco: 1200, foto: 'iphone6s.png', avaliacao: 4, parcelamento: 10, juros: 0, ofertas: 5},
+            {id: 4, titulo: 'iPhone 7 128GB', preco: 1350, foto: 'iphone6s.png', avaliacao: 2, parcelamento: 12, juros: 0, ofertas: 8},
+            {id: 5, titulo: 'iPhone 7 256GB', preco: 1480, foto: 'iphone6s.png', avaliacao: 1, parcelamento: 12, juros: 0, ofertas: 5},
+            {id: 6, titulo: 'iPhone 8 128GB', preco: 1600, foto: 'iphone6s.png', avaliacao: 4, parcelamento: 12, juros: 0, ofertas: 3}
+        ]
+
+        for ( c in produtos ) {
+            let sets = {
+                style: "currency",
+                currency: "BRL"
+            }
+
+            let divItem = document.createElement('div')
+            divItem.classList.add('item')
+            
+            let imgProduto = document.createElement('img')
+            imgProduto.classList.add('produto')
+            imgProduto.setAttribute('src', `Images/${produtos[c].foto}`)
+            
+            let hr = document.createElement('hr')
+            let h2 = document.createElement('h2')
+            h2.innerHTML = produtos[c].titulo
+
+            let a = document.createElement('a')
+            a.setAttribute('href', ``)
+
+            let divAvaliacao = document.createElement('div')
+            divAvaliacao.classList.add('avaliacao')
+
+            let spanOfertas = document.createElement('span')
+            spanOfertas.innerHTML = `${produtos[c].ofertas} ofertas à partir de`
+            let br = document.createElement('br')
+
+            let spanPreco = document.createElement('span')
+            spanPreco.classList.add('preco')
+            spanPreco.innerHTML = `${produtos[c].preco.toLocaleString("pt-BR", sets)}`
+
+            let spanParcelamento = document.createElement('span')
+            let precoParcela = produtos[c].preco/produtos[c].parcelamento
+            spanParcelamento.innerHTML = `${produtos[c].parcelamento}x de ${precoParcela.toLocaleString("pt-BR", sets)} sem juros`
+
+            document.querySelector('.responsive').appendChild(divItem)
+            divItem.appendChild(a)
+            a.appendChild(imgProduto)
+            divItem.appendChild(hr)
+            a.appendChild(h2)
+
+            a.addEventListener('click', (e)=>{
+                e.preventDefault()
+
+                var produtoWindowArea = document.querySelector('.produtoWindowArea')
+
+                produtoWindowArea.style.opacity = 0
+                produtoWindowArea.style.display = 'flex'
+                setTimeout(()=>{
+                    produtoWindowArea.style.opacity = 1
+                }, 200)
+            })
+
+            document.querySelector('.btnVoltar').addEventListener('click', ()=>{
+                document.querySelector('.produtoWindowArea').style.display = 'none'
+            })
+
+            divItem.appendChild(divAvaliacao)
+
+            let starsPos = produtos[c].avaliacao
+            let starsNeg = 5 - starsPos
+
+            for(i = 1; i <= starsPos; i++) {
+                let imgAvaliacaoPos = document.createElement('img')
+                imgAvaliacaoPos.setAttribute('src', 'Images/star2.svg')
+                divAvaliacao.appendChild(imgAvaliacaoPos)
+            }
+
+            if ( starsNeg != 0 ) {
+                for(i = 1; i <= starsNeg; i++) {
+                    let imgAvaliacaoNeg = document.createElement('img')
+                    imgAvaliacaoNeg.setAttribute('src', 'Images/star.svg')
+                    divAvaliacao.appendChild(imgAvaliacaoNeg)
+                }
+            }
+
+            divItem.appendChild(spanOfertas)
+            divItem.appendChild(spanPreco)
+            divItem.appendChild(spanParcelamento)
+        }
+
+    </script>
+    <!-- temporário, apenas enquanto os produtos não vieram do banco de dados -->
+
 </body>
 </html>

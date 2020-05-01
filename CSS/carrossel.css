@@ -66,7 +66,8 @@
 }
 
 .item span {
-    padding: 10px;
+    padding: 0 10px;
+    display: block;
 }
 
 .item .preco {
@@ -74,6 +75,48 @@
     font-weight: 600;
 }
 
+.produtoWindowArea {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.5);
+    display: none;
+    transition: all ease 0.5s;
+    justify-content: center;
+    align-items: center;
+    overflow: auto;
+}
+.produtoWindowBody {
+    width: 900px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 15px #888;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.btnComprar {
+    padding: 10px 20px;
+    background-color: #5051FF;
+    color: #FFF;
+    border: none;
+    margin: 6px 0;
+    text-decoration: none;
+    font-size: 20px;
+}
+.btnVoltar {
+    padding: 10px 20px;
+    background-color: rgb(255, 80, 80);
+    color: #FFF;
+    border: none;
+}
+.btnVoltar:hover {
+    cursor: pointer;
+}
 /* botões ------------------------------------------ */
 
 .slick-prev {
