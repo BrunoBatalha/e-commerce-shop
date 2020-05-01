@@ -2,11 +2,13 @@
         margin: 0;
         padding: 0;
         box-sizing: border-box;
+        background-color: rgb(252, 252, 252);
         font-family: Arial, Helvetica, sans-serif;
     }
     /**********************HEADER*********************/
+
     header {
-        height: 100px;
+        height:  100px;
         background-color:#fff;
         display: flex;
         justify-content: center;
@@ -97,7 +99,6 @@
 .txt-drop {
    text-align: center;
 }
-
     #bottons-sign-enter {
         display: flex;
         align-items: center;
@@ -183,14 +184,14 @@
     article {
         font-family: 'Sen', sans-serif;
         height: 500px;
-        background-color: #FFFFFF;
+        background-color: rgb(252, 252, 252);
         display: flex;
         justify-content: center;
     }
     #container_article {
         height: 500px;
         width: 1140px;
-        background-color:#FFFFFF;
+        background-color: rgb(252, 252, 252);
         display:flex;
         justify-content: center;
     }
@@ -201,11 +202,10 @@
     .txt-art {
         color: #005AEB;
         display: flex;
-        justify-content: center;
         font-size: 60px;
     }
     #card_article_area {
-        margin-top: 20px;
+        margin-top: 60px;
         display: flex;
         width: auto;
         padding:0px 15px;
@@ -246,112 +246,66 @@
         font-style: italic;
     }
     /*****************************FIM DO ARTICLE*************************/
-
-    /*****************************ÍNICIO DA MAIN*************************/
-    /*
-    main {
+    /***********************SECTION DEPOIMENTO************************/
+    #section-group {
+        margin-top:  60px;
         font-family: 'Sen', sans-serif;
-        height: 550px;
-        background-color: #FFF;
         display: flex;
         justify-content: center;
+        height: 500px;
     }
-    #container_main {
-        background-color: #FFF;
-        height: 550px;
-        width: 1100px;
+    .text_gp_center {
+        color:#005AEB;
+        font-size: 50px;
     }
-    .main-text {
-        border-bottom: 1px solid #005AEB;
-        align-items: flex-start;
+    #group_container {
+        height: 500px;
+        width: 1150px;
     }
-    .main-h2-center {
-        text-transform: uppercase;
-        padding: 5px;
-        font-size: 44px;
-        letter-spacing: 1.5px;
-        color:#000472;
-    }
-    #container_prod {
-        margin-top:15px;
-        font-family: 'Heebo', sans-serif;
+    #people_area {
+        margin-top: 60px;
+        border-bottom: 25px;
         display: flex;
+        justify-content: center;
         flex: 1;
     }
-    .prod {
-    padding: 10px;
-    width: 255px;
-    height: 378px;
-    border-left: 1px solid #005AEB;
-    margin-right: 6px;
-    justify-content: center;
-    }
-    .prod_img {
-        max-width: 255px;
-        padding: 15px;
-        border-bottom: 1px solid #999;
+    .group_people {
+        background-color: rgb(252, 252, 252);
+        padding: 0px 15px;
+        margin-left: 10px;
+        margin-right: 10px;
+        border-left: 1px solid #005AEB;
+        height: 320px;
+        max-width: 400px;
         text-align: center;
     }
-    .iphone6s-img {
-        width: 125px;
-    }
-    #produto_txt_area {
-        justify-content: center;
-    }
-    .produto_txt {
+    .people_image {
+        margin-top: 10px;
         text-align: center;
-        flex-direction: column;
+        border-bottom: 1px solid rgb(49, 24, 117);
     }
-    .iphone6s-txt {
-        font-size: 18.5px;
-    }
-    .star-img {
+    .people_desc, .people_name {
         text-align: center;
     }
-    .produto-starimg {
+    .user-image {
+        height: 110px;
+    }
+    .name-h2 {
+        font-size: 22.5px;
+        color: #4A55E8;
+    }
+    .desc-p {
         text-align: center;
-        margin:auto;
-        padding: 0px 7px;
-        height: 20px;
-    }
-    .produto-sbtxt {
-        padding: 15px;
-    }
-    .prod-sbtxt {
-        font-size: 15.5px;
-        margin-bottom: 6px;
-        margin-top: 6px;
-        font-weight: 500;
-    }
-    .sbtxt-price {
-        font-size: 24px;
+        margin-top: 40px;
+        max-width: 400px;
+        color: #000472;
+        font-style: italic;
+        font-size: 15px;
         font-weight: 600;
     }
-    */
-    /*****************************FIM DA MAIN*************************/
-    /***********************SECTION DEPOIMENTO************************/
-    #section2 {
-        display:flex;
-        justify-content:space-around;
-        flex-wrap:wrap;
-    }
-    #section2 .depoimentos {
-        margin:0 20px;
-    }
-    #section2 .depoimentos figure {
-        border-radius:50%;
-        overflow:hidden;
-    }
-    #section2 .comentarios {
-        width:280px;
-        height:220px;
-        padding:20px;
-        padding-top:0;
-        border:1px solid #cccccc;
-        margin:15px auto;
-        box-shadow: 4px 4px 10px;
-        text-align:justify;
-    }
-    #section2 .comentarios h1 {
-        border-bottom:1px solid #cccccc;
+    .hr_center {
+        width: 1140px;
+        height: 1px;
+        background-color: #005AEB;
+        border: none;
     }

@@ -1,0 +1,111 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+    
+    background-color: #F1F1F1;
+    font-family: 'Bitter', serif;
+    
+}
+main {
+    height: 100vh;
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+}
+#form {
+    padding: 25px;
+    border-radius: 20px;
+    border: 1px solid rgb(48, 44, 245);
+    height: 450px;
+    width: 550px;
+    background-color: #FFF;
+    align-items: center;
+    flex-direction: column;
+}
+.txt_center_form {
+    max-width: 500px;
+    text-align: center;
+}
+.txt_center {
+    color: #5c7cfa;
+    font-size: 35px;
+}
+
+
+#inputs_area {
+    margin-top: 30px;
+}
+
+#email_text, #password_text {
+    text-align: center;
+}
+.email, .password {
+    font-size: 20px;
+}
+#email_input_area, #password_input_area {
+    max-width: 500px;
+    text-align: center;
+}
+#email_input_area > i {
+    position: fixed;
+    margin-top: 17px;
+    margin-left: 17px;
+}
+#password_input_area > i {
+    position: fixed;
+    margin-top: 17px;
+    margin-left: 17px;
+}
+#inp_email {
+    font-size: 17.5px;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    height: 50px;
+    border: 1px solid rgb(5, 0, 148);
+    padding: 20px;
+    outline:none;
+    border-radius: 26px;
+    width: 350px;
+}
+#inp_password {
+    font-size: 17.5px;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    height: 50px;
+    border: 1px solid rgb(5, 0, 148);
+    padding: 20px;
+    outline:none;
+    border-radius: 26px;
+    width: 350px;
+}
+
+
+#bottom_confirm {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 500px;
+    margin-top: 30px;
+    text-align: center;
+}
+#confirm-btn {
+    border: 1px solid rgb(1, 146, 8);
+    background-color: rgb(30, 161, 74);
+    padding: 10px;
+    text-align: center;
+    color: #FFF;
+    height: 50px;
+    font-weight: 500;
+    border-radius: 10px;
+    font-size: 23px;
+    cursor: pointer;
+    width: 250px;
+    font-family: 'Roboto', sans-serif;
+}
+#confirm-btn:hover {
+    background-color: rgb(26, 134, 64);
+}
