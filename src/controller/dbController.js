@@ -78,3 +78,6 @@ exports.deletar = async (req,res) => {
         res.send("Houve um erro a deletar: "+err);
     };
 };
+exports.renderLogin = async (req,res) => {
+    res.render('pages/login');
+}
