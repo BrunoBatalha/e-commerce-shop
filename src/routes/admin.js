@@ -6,6 +6,7 @@ const dbController = require('../controller/dbController');
 //rotas de paginas estaticas
 router.get('/',pageController.renderHome);
 router.get('/login',dbController.renderLogin);
+router.get('/sobre',dbController.renderSobre);
 
 //rotas para consultas no banco
 router.post('/salvar',dbController.save);

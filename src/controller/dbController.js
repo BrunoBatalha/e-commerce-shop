@@ -80,4 +80,7 @@ exports.deletar = async (req,res) => {
 };
 exports.renderLogin = async (req,res) => {
     res.render('pages/login');
+};
+exports.renderSobre = async (req,res) => {
+    res.render('pages/sobre');
 }
