@@ -15,6 +15,7 @@
 </head>
 
 <body>
+
     <!------------ÍNICIO DO HEADER----------->
     <header>
         <div class="container">
@@ -95,37 +96,15 @@
         <h2>EM DESTAQUE</h2>
         <hr>
 
-        <div class="responsive">
-
-            <!--
-            <div class="item">
-                <img src="/img/iphone6s.png" class="produto">
-                <hr>
-                <h2>iPhone 6S 128GB</h2>
-
-                <div class="avaliacao">
-                    <img src="/img/star2.svg" alt="star" />
-                    <img src="/img/star2.svg" alt="star" />
-                    <img src="/img/star2.svg" alt="star" />
-                    <img src="/img/star.svg" alt="star" />
-                    <img src="/img/star.svg" alt="star" />
-                </div>
-
-                <span>15 ofertas à partir de</span><br>
-                <span class="preco">R$950,00</span><br>
-                <span>10x de R$95,00 sem juros</span>
-            </div>
-            -->
-
-        </div>
+        <div class="responsive produto-area"></div>
     </div>
 
     <div class="produtoWindowArea">
         <div class="produtoWindowBody">
-            <img src="/img/iphone6s.png" width="300px" alt="">
-            <h2>iPhone 6S 128GB</h2>
-            <span>R$1.500,00</span>
-            <a class="btnComprar" href="comprar.html">Comprar</a>
+            <img src="" width="300px" alt="">
+            <h2></h2>
+            <span></span>
+            <a class="btnComprar" href="./comprar">Comprar</a>
             <button class="btnVoltar">Voltar</button>
         </div>
     </div>
@@ -263,23 +242,98 @@
         </div>
         </div>
     </section>
+
     <script src="/js/jquery-3.5.0.min.js"></script>
     <script src="/js/slick.min.js"></script>
     <script src="/js/carrossel.js"></script>
     <script src="/js/script-header.js"></script>
 
+    <div class="models">
+        <div class="produto-item">
+            <a href="">
+                <img src="" class="produto">
+            </a>
+            <hr>
+            <h2></h2>
+            <div class="avaliacao">
+                <img src="/img/star2.svg" alt="star" />
+                <img src="/img/star2.svg" alt="star" />
+                <img src="/img/star2.svg" alt="star" />
+                <img src="/img/star.svg" alt="star" />
+                <img src="/img/star.svg" alt="star" />
+            </div>
+
+            <span class="ofertas"></span>
+            <span class="preco"></span>
+            <span class="parcelas"></span>
+        </div>
+    </div>
+
     <!-- temporário, apenas enquanto os produtos não vieram do banco de dados -->
     <script>
 
         let produtos = [
-            {id: 1, titulo: 'iPhone 6S 128GB', preco: 950, foto: 'iphone6s.png', avaliacao: 5, parcelamento: 10, juros: 0, ofertas: 15},
-            {id: 2, titulo: 'iPhone 6S 64GB', preco: 800, foto: 'iphone6s.png', avaliacao: 3, parcelamento: 10, juros: 0, ofertas: 6},
-            {id: 3, titulo: 'iPhone 6S 256GB', preco: 1200, foto: 'iphone6s.png', avaliacao: 4, parcelamento: 10, juros: 0, ofertas: 5},
-            {id: 4, titulo: 'iPhone 7 128GB', preco: 1350, foto: 'iphone6s.png', avaliacao: 2, parcelamento: 12, juros: 0, ofertas: 8},
-            {id: 5, titulo: 'iPhone 7 256GB', preco: 1480, foto: 'iphone6s.png', avaliacao: 1, parcelamento: 12, juros: 0, ofertas: 5},
-            {id: 6, titulo: 'iPhone 8 128GB', preco: 1600, foto: 'iphone6s.png', avaliacao: 4, parcelamento: 12, juros: 0, ofertas: 3}
+            {id: 1, titulo: 'iPhone 6S 128GB', preco: 950, foto: '/img/products/iphone6s.png', avaliacao: 5, parcelas: 10, juros: 0, ofertas: 15},
+            {id: 2, titulo: 'iPhone 6S Rose 64GB', preco: 800, foto: '/img/products/iphone6s-rose.png', avaliacao: 3, parcelas: 10, juros: 0, ofertas: 6},
+            {id: 3, titulo: 'iPhone 7 256GB', preco: 1200, foto: '/img/products/iphone7.png', avaliacao: 4, parcelas: 10, juros: 0, ofertas: 5},
+            {id: 4, titulo: 'iPhone XR 128GB', preco: 1350, foto: '/img/products/iphonexr.png', avaliacao: 2, parcelas: 12, juros: 0, ofertas: 8},
+            {id: 5, titulo: 'Redmi Note 8 256GB', preco: 1480, foto: '/img/products/redminote8pro.webp', avaliacao: 1, parcelas: 12, juros: 0, ofertas: 5},
+            {id: 6, titulo: 'Motorola One 128GB', preco: 1600, foto: '/img/products/motorolaonehyper.webp', avaliacao: 4, parcelas: 12, juros: 0, ofertas: 3}
         ]
 
+        const c = (el) => document.querySelector(el) // função auxiliar que substitui o document.querySelector()
+        const cs = (el) => document.querySelectorAll(el) // função auxiliar que substitui o document.querySelectorAll()
+        const sets = {
+            style: "currency",
+            currency: "BRL"
+        }
+
+        produtos.map( (item, index) => { // mapeamento do array produtos
+            
+            let produtoItem = c('.models .produto-item').cloneNode(true) // clona a div do produto para cada item do array
+
+            produtoItem.setAttribute('data-key', index) // adiciona um atributo na div do produto com o valor do índice do produto
+            produtoItem.querySelector('img').src = item.foto // exibe a imagem do produto
+            produtoItem.querySelector('h2').innerHTML = item.titulo // exibe o título do produto
+            produtoItem.querySelector('.ofertas').innerHTML = `${item.ofertas} ofertas a partir de` // exibe a quantidade de ofertas do produto
+            produtoItem.querySelector('.preco').innerHTML = item.preco.toLocaleString("pt-BR", sets) // exibe o preço do produto
+            produtoItem.querySelector('.parcelas').innerHTML = `${item.parcelas}x de ${(item.preco/item.parcelas).toLocaleString("pt-BR", sets)} sem juros` // exibe a quantidade de parcelas do produto
+
+            produtoItem.querySelector('a').addEventListener('click', (e)=>{
+                e.preventDefault()
+
+                let key = e.target.closest('.produto-item').getAttribute('data-key') // pega o valor do atributo data key
+
+                let produtoWindowArea = c('.produtoWindowArea')
+
+                produtoWindowArea.querySelector('img').src = produtos[key].foto
+                produtoWindowArea.querySelector('h2').innerHTML = produtos[key].titulo
+                produtoWindowArea.querySelector('span').innerHTML = produtos[key].preco.toLocaleString("pt-BR", sets)
+
+                produtoWindowArea.style.opacity = 0
+                produtoWindowArea.style.display = 'flex'
+                setTimeout(()=>{
+                    produtoWindowArea.style.opacity = 1
+                }, 200)
+            })
+
+            c('.produto-area').append( produtoItem ) // adiciona o produto dentro da área de produtos
+
+        })
+
+        // Eventos do modal
+        function closeModal() { // função para ocultar o modal
+            c('.produtoWindowArea').style.opacity = 0
+            setTimeout( ()=>{
+                c('.produtoWindowArea').style.display = 'none'
+            }, 500)
+        }
+
+        c('.btnVoltar').addEventListener('click', closeModal)
+        
+
+        /*
+        
         for ( c in produtos ) {
             let sets = {
                 style: "currency",
@@ -360,6 +414,8 @@
             divItem.appendChild(spanPreco)
             divItem.appendChild(spanParcelamento)
         }
+        
+        */
 
     </script>
     <!-- temporário, apenas enquanto os produtos não vieram do banco de dados -->

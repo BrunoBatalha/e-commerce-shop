@@ -309,3 +309,7 @@
         background-color: #005AEB;
         border: none;
     }
+
+.models {
+    display: none;
+}
