@@ -75,6 +75,7 @@
     font-weight: 600;
 }
 
+/* formatação do model */
 .produtoWindowArea {
     position: fixed;
     top: 0;
@@ -89,7 +90,7 @@
     overflow: auto;
 }
 .produtoWindowBody {
-    width: 900px;
+    width: 800px;
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0 0 15px #888;
@@ -97,26 +98,66 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 20px;
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: row;
+}
+.produtoWindowBodyImg {
+    width: 400px;
+}
+.produtoWindowBodyImg img {
+    width: 100%;
+}
+.produtoWindowBodyInfo {
+    width: 400px;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.produtoWindowBodyInfo .produto-desc {
+    color: #121212;
+    margin-bottom: 20px;
+}
+.produtoWindowBodyInfo span {
+    font-size: 30px;
+    font-weight: bold;
+    color: #323232;
+    margin-bottom: 20px;
+}
+.produtoWindowBodyInfo .botoes {
+    display: flex;
+    justify-content: space-between;
 }
 .btnComprar {
-    padding: 10px 20px;
+    padding: 15px 0;
     background-color: #5051FF;
+    text-align: center;
     color: #FFF;
     border: none;
     margin: 6px 0;
     text-decoration: none;
     font-size: 20px;
+    width: 50%;
+    font-weight: bold;
+    border-radius: 15px;
+}
+.btnComprar:hover {
+    background-color: #005AEB;
 }
 .btnVoltar {
-    padding: 10px 20px;
-    background-color: rgb(255, 80, 80);
-    color: #FFF;
+    color: #414141;
+    background-color: #fff;
     border: none;
+    font-size: 16px;
+    font-weight: 600;
+    width: 40%;
 }
 .btnVoltar:hover {
     cursor: pointer;
+    color: #005AEB;
 }
+/* formatação do model */
+
 /* botões ------------------------------------------ */
 
 .slick-prev {
