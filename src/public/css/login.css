@@ -82,7 +82,9 @@ main {
     width: 350px;
 }
 
-
+#btn-area{
+    display: flex;
+}
 #bottom_confirm {
     display: flex;
     align-items: center;
