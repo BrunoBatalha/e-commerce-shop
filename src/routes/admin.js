@@ -7,6 +7,7 @@ const dbController = require('../controller/dbController');
 router.get('/',pageController.renderHome);
 router.get('/login',dbController.renderLogin);
 router.get('/sobre',dbController.renderSobre);
+router.get('/comprar',dbController.renderComprar);
 
 //rotas para consultas no banco
 router.post('/salvar',dbController.save);
