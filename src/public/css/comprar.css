@@ -1,0 +1,59 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #141414;
+}
+.topo {
+    padding: 10px 0;
+    width: 1000px;
+    margin: auto;
+}
+.info {
+    display: flex;
+    justify-content: center;
+}
+.endereco {
+    width: 500px;
+    background-color: #dddddd;
+    padding: 50px 0;
+}
+.pedido {
+    width: 500px;
+    background-color: #eeeeee;
+    padding: 50px 0;
+}
+.opcao-entrega {
+    margin: 0 auto;
+    width: 1000px;
+    padding: 40px 0;
+    background-color: #ffffff;
+}
+.cupom {
+    background-color: #dddddd;
+    padding: 20px 0;
+    width: 1000px;
+    margin: auto;
+}
+.f-pagamento {
+    padding: 50px 0;
+    background-color: #ffffff;
+    width: 1000px;
+    margin: auto;
+}
+.btn-pagamento {
+    width: 1000px;
+    margin: auto;
+    background-color: #eeeeee;
+    padding: 30px 0;
+    text-align: center;
+}
+.btn-pagamento button {
+    font-size: 20px;
+    color: white;
+    padding: 10px 30px;
+    background-color: green;
+    border: none;
+    border-radius: 10px;
+}
+.btn-pagamento button:hover {
+    cursor: pointer;
+}
