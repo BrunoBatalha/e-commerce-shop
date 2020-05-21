@@ -3,3 +3,183 @@ body {
     padding: 0;
     box-sizing: border-box;
 }
+ /**********************HEADER*********************/
+
+    header {
+        height:  100px;
+        background-color:#fff;
+        display: flex;
+        justify-content: center;
+        border-bottom: 1px solid #999;
+        font-family: 'Rubik', sans-serif;
+    }
+    .container {
+        display: flex;
+        justify-content: space-around;
+        width: 1140px;
+        background-color:#FFF;
+    }
+    .shop-logo{
+        display:flex;
+        align-items:center;
+    }
+    #logo-shop-header {
+        width: 180px;
+        /* height: 184px; */
+    }
+    .menu-header{
+        /*font-size: 10px;*/
+        display:flex;
+        align-items:center;
+    }
+    nav ul,
+    nav li{
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+    nav ul{
+        display: flex;
+    }
+    nav a {
+        font-family: 'Roboto Condensed', sans-serif;
+        font-size: 18px;
+        display: block;
+        font-weight: bold;
+        padding: 15px;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: #000;
+    }
+    nav a:hover{
+            color: #5051FF;
+    }
+    
+.arrowdown {
+    margin-top: 3px;
+   margin-left: 3px;
+    position: absolute;
+    width: 15px;
+   }
+
+#menu-dropdown {
+    font-family: 'Rubik', sans-serif;
+   display: none;
+   margin-top: 50px;
+   margin-left: 160px;
+   position: absolute;
+   height: 210px;
+   width: 250px;
+   flex-direction: column;
+   border: 1px solid #000;
+   border-radius: 5px;
+   background-color: #FEFDFD;
+   transition: all 0.5s;
+}
+.dpdown-item {
+   padding: 8px 12px;
+   max-width: 125px;
+   max-height: 40px;
+   display: flex;
+   line-height: 35px;
+}
+.dpdown-txt {
+   cursor: pointer;
+   font-size: 15px;
+  margin-left: 10px;
+}
+.dpdown-txt:hover {
+   color: #5051FF;
+}
+.img-dropdown {
+   width: 27px;
+}
+.txt-drop {
+   text-align: center;
+}
+    #bottons-sign-enter {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        font-size: 13px;
+    }
+    #bottons-sign-enter a{
+        text-decoration: none;
+    }
+    #enter, #sign {
+        text-decoration: none;
+        color: #000;
+        font-size: 15px;
+        margin-right: 3px;
+    }
+    #enter:hover{
+        color: #5051FF;
+    }
+    #btm-active-home{
+        color: #5051FF;
+    }
+    /***************************** FIM DO HEADER*************************/
+
+    #section-group {
+        margin-top:  60px;
+        font-family: 'Sen', sans-serif;
+        display: flex;
+        justify-content: center;
+        height: 500px;
+    }
+    .text_gp_center {
+        color:#005AEB;
+        font-size: 50px;
+    }
+    #group_container {
+        height: 500px;
+        width: 1150px;
+    }
+    #people_area {
+        margin-top: 60px;
+        border-bottom: 25px;
+        display: flex;
+        justify-content: center;
+        flex: 1;
+    }
+    .group_people {
+        background-color: rgb(252, 252, 252);
+        padding: 0px 15px;
+        margin-left: 10px;
+        margin-right: 10px;
+        border-left: 1px solid #005AEB;
+        height: 320px;
+        max-width: 400px;
+        text-align: center;
+    }
+    .people_image {
+        margin-top: 10px;
+        text-align: center;
+        border-bottom: 1px solid rgb(49, 24, 117);
+    }
+    .people_desc, .people_name {
+        text-align: center;
+    }
+    .user-image {
+        height: 110px;
+    }
+    .name-h2 {
+        font-size: 22.5px;
+        color: #4A55E8;
+    }
+    .desc-p {
+        text-align: center;
+        margin-top: 40px;
+        max-width: 400px;
+        color: #000472;
+        font-style: italic;
+        font-size: 15px;
+        font-weight: 600;
+    }
+    .hr_center {
+        width: 1140px;
+        height: 1px;
+        background-color: #005AEB;
+        border: none;
+    }
+
