@@ -119,13 +119,41 @@ body {
         color: #5051FF;
     }
     /***************************** FIM DO HEADER*************************/
+    /***************************** MAIN *************************/
+    main {
+    	font-family: 'Sen', sans-serif;
+    	height: 300px;
+    	display: flex;
+    	justify-content: center;
+        background-color: rgb(252, 252, 252);
+    }
+    .container_main {
+    	justify-content: center;
+    	height: 300px;
+    	width: 1140px;
+    }
+    #text_sobre {
+    	max-height:300px;
+    }
+    .text_sobre_h1 {
+    	color: #005AEB;
+    	font-size: 50px;
+    }
+    .text_sobre_p {
+    	font-weight: 450;
+    	font-size: 21px;
+    }
+    /***************************** FIM DA MAIN*************************/
 
+
+
+    /***************************** SECTION *************************/
     #section-group {
         margin-top:  60px;
         font-family: 'Sen', sans-serif;
         display: flex;
         justify-content: center;
-        height: 500px;
+        height: 1000px;
     }
     .text_gp_center {
         color:#005AEB;
@@ -181,5 +209,13 @@ body {
         height: 1px;
         background-color: #005AEB;
         border: none;
+    }
+    /***************************** FIM DA SECTION *************************/
+
+    /***************************** FOOTER *************************/
+
+    footer {
+    	height: 200px;
+    	background-color: #ccc;
     }
 
