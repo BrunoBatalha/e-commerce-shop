@@ -1,5 +1,9 @@
 const Produto = require('../models/produto');
+const cookieParser = require('cookie-parser');
+const express = require('express');
+const app = express();
 
+//Cookie
 
 exports.save = async (req,res) => {
     try{
@@ -73,14 +77,26 @@ exports.listar = async (req,res) => {
 exports.deletar = async (req,res) => {
     try{
         await Produto.findByIdAndRemove(req.params.id);
-        res.send("Dados deletados com sucesso...")
+        res.send("<center><h1>Dados deletados com sucesso...</h1></center>")
     }catch(err) {
         res.send("Houve um erro a deletar: "+err);
     };
 };
-exports.renderLogin = async (req,res) => {
-    res.render('pages/login');
+exports.autenticar = async (req,res) => {
+    try{
+    
+    if(!req.body.email || req.body.email === undefined || req.body.email == null
+    || !req.body.Senha || req.body.Senha === undefined || req.body.Senha == null) {
+        res.send("<h2>Digite as informações corretamente<h2>");
+    }else {
+        
+        app.use(cookieParser());
+        res.cookie('foo', 'bar', { maxAge: 1000 * 60 * 60 * 24 * 7 });
+        res.clearCookie('foo');
+        console.log("Cookie criado com sucesso: "+req.cookies.foo);
+        res.render('pages/index');
+    };
+    }catch(err){
+        res.send("Erro:"+err);
+    };
 };
-exports.renderSobre = async (req,res) => {
-    res.render('pages/sobre');
-}
