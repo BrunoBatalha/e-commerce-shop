@@ -216,6 +216,39 @@ body {
 
     footer {
     	height: 200px;
-    	background-color: #ccc;
+    	display: flex;
+        font-family: 'Sen', sans-serif;
+    	justify-content: center;
+    	border: 1px solid #000;
     }
+    .container_footer {
+    	width: 1140px;
+    	height: 200px;
+    	display: flex;
+    	justify-content: space-around;
+    }
+    .text_center_footer {
+    	color: #005AEB;
+    	font-size: 28px;
+    	text-align: center!important;
+    }
+    .logo_footer_png {
+    	height: 10rem;
+    }
+    .pages_footer {
+    	padding: 15px;
+    	flex-direction: column;
+    }
+    .list_footer {
+    	margin-bottom: 5px;
+    	list-style: none;
+    }
+    .item_list_footer {
+    	text-decoration: none;
+    	color: #000;
+    	font-size: 17.5px;
+    }
+    footer a:hover {
+    	color: #005AEB;
 
+    }
