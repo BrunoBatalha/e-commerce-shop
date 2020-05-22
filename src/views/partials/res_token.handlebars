@@ -1,0 +1,27 @@
+<script>
+    async function autenticacaoSobre(){
+        try{
+        //Se tiver outra rota, cria outra função
+            console.log("teste");
+            var token = localStorage.getItem('token');
+            var headerToken = new Headers({
+                authorization:token
+            })
+
+            fetch('http://localhost:3333/autenticar',{
+                headers: headerToken
+                }).then(response => {
+                    return response.json();
+                }).then(token => {
+                    if(token.autenticado == "true"){
+                        location.href = "/sobre";
+                    }else{
+                        location.href = "/login";
+                    }
+                })
+
+        }catch(err){
+            console.log('Erro na função:'+err);
+        };
+        };
+</script>

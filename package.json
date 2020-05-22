@@ -19,6 +19,7 @@
     "express-session": "^1.17.1",
     "jwt-simple": "^0.5.6",
     "mongoose": "^5.9.10",
+    "node-localstorage": "^2.1.6",
     "passport": "^0.4.1",
     "passport-jwt": "^4.0.0"
   }

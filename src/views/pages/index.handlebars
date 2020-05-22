@@ -15,7 +15,12 @@
 </head>
 
 <body>
-
+    {{#if token}}
+        <script>
+            localStorage.setItem('token', '{{token}}');
+        </script>
+    {{/if}}
+    
     <!------------ÍNICIO DO HEADER----------->
     <header>
         <div class="container">
@@ -25,13 +30,13 @@
             <div class="menu-header">
                 <nav>
                     <ul>
-                        <a href="#">
+                        <a href="index.handlebars">
                             <li id="btm-active-home">Ínicio</li>
                         </a>
-                        <a href="./sobre">
+                        <a onclick="autenticacaoSobre()" class="click">
                             <li>Sobre</li>
                         </a>
-                        <a href="#" onclick="Drop()">
+                        <a onclick="Drop()">
                             <li class="bf-category">Categorias
                             <img class="arrowdown" src="/img/arrow-down.svg">
                             </li>
