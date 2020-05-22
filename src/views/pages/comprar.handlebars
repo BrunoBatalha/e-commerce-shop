@@ -3,9 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FInalize a sua compra</title>
+    <title>Finalize a sua compra</title>
+    <link rel="stylesheet" href="/css/comprar.css">
 </head>
 <body>
-    <h1>Finalize a sua compra</h1>
+
+    <div class="topo">
+        <h1><a href="/">LOGO</a></h1>
+    </div>
+
+    <div class="info">
+        <div class="endereco">
+            <h2>Endereço</h2>
+        </div>
+        <div class="pedido">
+            <h2>Seu pedido</h2>
+        </div>
+    </div>
+
+    <div class="opcao-entrega">
+        <h2>Opções de entrega</h2>
+        Entrega rápida <input type="radio" name="opcaoEntrega"><br><br>
+        Entrega comum <input type="radio" name="opcaoEntrega">
+    </div>
+
+    <div class="cupom">
+        <h2>Cupom de desconto</h2>
+        <input type="text" name="cupomText" id="cupomText">
+        <button value="validarCupom">Validar</button>
+    </div>
+
+    <div class="f-pagamento">
+        <h2>Forma de pagamento</h2>
+
+        Boleto <input type="radio" name="fPagamento">
+
+        Cartão de crédito <input type="radio" name="fPagamento"><br><br>
+
+        <div class="formCartao">
+
+            <form action="" method="post">
+                Número do cartão<br>
+                <input type="text" name="nCartao" id=""><br><br>
+
+                Nome impresso no cartão<br>
+                <input type="text" name="nCartao" id=""><br><br>
+
+                Validade
+                <select name="validadeCartaoMes" id="">
+                    <option value="01">01</option>
+                    <option value="02">02</option>
+                    <option value="03">03</option>
+                    <option value="04">04</option>
+                    <option value="05">05</option>
+                </select>
+                <select name="validadeCartaoAno" id="">
+                    <option value="2020">2020</option>
+                    <option value="2021">2021</option>
+                    <option value="2022">2022</option>
+                    <option value="2023">2023</option>
+                    <option value="2024">2024</option>
+                </select>
+                <br><br>
+
+                CVV<br><br>
+                <input type="text" name="cvvCartao" id=""><br>
+                Parcelas<br><br>
+
+                <input type="text" name="nCartao" id="">
+
+            </form>
+
+        </div>
+    </div>
+
+    <div class="btn-pagamento">
+        <button value="btnPagamento">PAGAR</button>
+    </div>
+
 </body>
 </html>

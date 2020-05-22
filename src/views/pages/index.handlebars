@@ -68,9 +68,6 @@
             <a href="#">
                 <h3 id="enter"><a href="./login"> Entrar </a></h3> 
             </a>
-            <a href="#">
-                <h3 id="sign">Cadastrar-se</h3>
-            </a>
         </div>
         </div>
     </header>
@@ -94,27 +91,36 @@
     </section>
     <!------------FIM DA SECTION----------->
     
-    <!-- inicio do carrossel -->
     
+    <!-- carrossel -->
     <div class="carrossel">
-
         <h2>EM DESTAQUE</h2>
         <hr>
-
         <div class="responsive produto-area"></div>
     </div>
 
+    <!-- modal -->
     <div class="produtoWindowArea">
         <div class="produtoWindowBody">
-            <img src="" width="300px" alt="">
-            <h2></h2>
-            <span></span>
-            <a class="btnComprar" href="./comprar">Comprar</a>
-            <button class="btnVoltar">Voltar</button>
+            <div class="produtoWindowBodyImg">
+                <img src="" alt="">
+            </div>
+            <div class="produtoWindowBodyInfo">
+                <h2></h2>
+                <div class="produto-desc">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Quia ipsum delectus, laborum ut dolores molestias aut ducimus non! 
+                    Temporibus incidunt vitae atque! Dolores, id blanditiis? Delectus 
+                    aliquam quas porro voluptate!
+                </div>
+                <span></span>
+                <div class="botoes">
+                    <a class="btnComprar" href="./comprar">Comprar</a>
+                    <button class="btnVoltar">Voltar</button>
+                </div>
+            </div>
         </div>
     </div>
-
-    <!-- fim do carressel -->
 
     <!------------ÍNICIO DO ARTICLE----------->
     <article>
@@ -163,101 +169,16 @@
         </div>
     </article>
     <!------------FIM DO ARTICLE----------->
-    <!--------SECTION DEPOIMENTOS--------->
-    <section id="section-group">
-        <div id="group_container">
-        <div id="text_group">
-            <h1 class="text_gp_center">Equipe fundadora da Shop</h1>
-            <hr class="hr_center">
-        </div>
-        <div id="people_area">
-        <div class="group_people">
-            <div class="people_image">
-                <img class="user-image" src="/img/user-1.png">
-                <div class="people_name">
-                    <h2 class="name-h2">Fernando Freitas</h2>
-                </div>
-            </div>
-            <div class="people_desc">
-                <p class="desc-p">Fernando é um desenvolvedor front-end iniciante, idealizador do projeto e SEO da Nasa.</p>
-            </div>
-        </div>
-        <div class="group_people">
-            <div class="people_image">
-                <img class="user-image" src="/img/circle-undef.png">
-                <div class="people_name">
-                    <h2 class="name-h2">Bruno Batalha</h2>
-                </div>
-            </div>
-            <div class="people_desc">
-                <p class="desc-p">Fernando é um desenvolvedor front-end iniciante, idealizador do projeto e SEO da Nasa.</p>
-            </div>
-        </div>
-        <div class="group_people">
-            <div class="people_image">
-                <img class="user-image" src="/img/circle-undef.png">
-                <div class="people_name">
-                    <h2 class="name-h2">Matheus S....</h2>
-                    
-                </div>
-            </div>
-            <div class="people_desc">
-                <p class="desc-p">Fernando é um desenvolvedor front-end iniciante, idealizador do projeto e SEO da Nasa.</p>
-            </div>
-        </div>
-        </div>
-
-
-        <!-------Area 2 da equipe------->
-
-        <div id="people_area">
-        <div class="group_people">
-            <div class="people_image">
-                <img class="user-image" src="/img/circle-undef.png">
-                <div class="people_name">
-                    <h2 class="name-h2">Alex</h2>
-                </div>
-            </div>
-            <div class="people_desc">
-                <p class="desc-p">Fernando é um desenvolvedor front-end iniciante, idealizador do projeto e SEO da Nasa.</p>
-            </div>
-        </div>
-        <div class="group_people">
-            <div class="people_image">
-                <img class="user-image" src="/img/circle-undef.png">
-                <div class="people_name">
-                    <h2 class="name-h2">Jessé Figueiró</h2>
-                </div>
-            </div>
-            <div class="people_desc">
-                <p class="desc-p">Fernando é um desenvolvedor front-end iniciante, idealizador do projeto e SEO da Nasa.</p>
-            </div>
-        </div>
-        <div class="group_people">
-            <div class="people_image">
-                <img class="user-image" src="/img/circle-undef.png">
-                <div class="people_name">
-                    <h2 class="name-h2">João Vitor</h2>
-                </div>
-            </div>
-            <div class="people_desc">
-                <p class="desc-p">Fernando é um desenvolvedor front-end iniciante, idealizador do projeto e SEO da Nasa.</p>
-            </div>
-        </div>
-        </div>
-        </div>
-    </section>
-
     <script src="/js/jquery-3.5.0.min.js"></script>
     <script src="/js/slick.min.js"></script>
     <script src="/js/carrossel.js"></script>
     <script src="/js/script-header.js"></script>
 
+    <!-- models -->
     <div class="models">
+        <!-- produto item model -->
         <div class="produto-item">
-            <a href="">
-                <img src="" class="produto">
-            </a>
+            <a href=""><img src="" class="produto"></a>
             <hr>
             <h2></h2>
             <div class="avaliacao">
@@ -267,7 +188,6 @@
                 <img src="/img/star.svg" alt="star" />
                 <img src="/img/star.svg" alt="star" />
             </div>
-
             <span class="ofertas"></span>
             <span class="preco"></span>
             <span class="parcelas"></span>
@@ -282,8 +202,8 @@
             {id: 2, titulo: 'iPhone 6S Rose 64GB', preco: 800, foto: '/img/products/iphone6s-rose.png', avaliacao: 3, parcelas: 10, juros: 0, ofertas: 6},
             {id: 3, titulo: 'iPhone 7 256GB', preco: 1200, foto: '/img/products/iphone7.png', avaliacao: 4, parcelas: 10, juros: 0, ofertas: 5},
             {id: 4, titulo: 'iPhone XR 128GB', preco: 1350, foto: '/img/products/iphonexr.png', avaliacao: 2, parcelas: 12, juros: 0, ofertas: 8},
-            {id: 5, titulo: 'Redmi Note 8 256GB', preco: 1480, foto: '/img/products/redminote8pro.webp', avaliacao: 1, parcelas: 12, juros: 0, ofertas: 5},
-            {id: 6, titulo: 'Motorola One 128GB', preco: 1600, foto: '/img/products/motorolaonehyper.webp', avaliacao: 4, parcelas: 12, juros: 0, ofertas: 3}
+            {id: 5, titulo: 'Redmi Note 8 256GB', preco: 1480, foto: '/img/products/iphone6s.png', avaliacao: 1, parcelas: 12, juros: 0, ofertas: 5},
+            {id: 6, titulo: 'Motorola One 128GB', preco: 1600, foto: '/img/products/iphone6s.png', avaliacao: 4, parcelas: 12, juros: 0, ofertas: 3}
         ]
 
         const c = (el) => document.querySelector(el) // função auxiliar que substitui o document.querySelector()
@@ -304,12 +224,12 @@
             produtoItem.querySelector('.preco').innerHTML = item.preco.toLocaleString("pt-BR", sets) // exibe o preço do produto
             produtoItem.querySelector('.parcelas').innerHTML = `${item.parcelas}x de ${(item.preco/item.parcelas).toLocaleString("pt-BR", sets)} sem juros` // exibe a quantidade de parcelas do produto
 
-            produtoItem.querySelector('a').addEventListener('click', (e)=>{
+            produtoItem.querySelector('a').addEventListener('click', (e)=>{ // mostra modal
                 e.preventDefault()
 
                 let key = e.target.closest('.produto-item').getAttribute('data-key') // pega o valor do atributo data key
 
-                let produtoWindowArea = c('.produtoWindowArea')
+                var produtoWindowArea = c('.produtoWindowArea')
 
                 produtoWindowArea.querySelector('img').src = produtos[key].foto
                 produtoWindowArea.querySelector('h2').innerHTML = produtos[key].titulo
@@ -335,92 +255,6 @@
         }
 
         c('.btnVoltar').addEventListener('click', closeModal)
-        
-
-        /*
-        
-        for ( c in produtos ) {
-            let sets = {
-                style: "currency",
-                currency: "BRL"
-            }
-
-            let divItem = document.createElement('div')
-            divItem.classList.add('item')
-            
-            let imgProduto = document.createElement('img')
-            imgProduto.classList.add('produto')
-            imgProduto.setAttribute('src', `/img/${produtos[c].foto}`)
-            
-            let hr = document.createElement('hr')
-            let h2 = document.createElement('h2')
-            h2.innerHTML = produtos[c].titulo
-
-            let a = document.createElement('a')
-            a.setAttribute('href', ``)
-
-            let divAvaliacao = document.createElement('div')
-            divAvaliacao.classList.add('avaliacao')
-
-            let spanOfertas = document.createElement('span')
-            spanOfertas.innerHTML = `${produtos[c].ofertas} ofertas à partir de`
-            let br = document.createElement('br')
-
-            let spanPreco = document.createElement('span')
-            spanPreco.classList.add('preco')
-            spanPreco.innerHTML = `${produtos[c].preco.toLocaleString("pt-BR", sets)}`
-
-            let spanParcelamento = document.createElement('span')
-            let precoParcela = produtos[c].preco/produtos[c].parcelamento
-            spanParcelamento.innerHTML = `${produtos[c].parcelamento}x de ${precoParcela.toLocaleString("pt-BR", sets)} sem juros`
-
-            document.querySelector('.responsive').appendChild(divItem)
-            divItem.appendChild(a)
-            a.appendChild(imgProduto)
-            divItem.appendChild(hr)
-            a.appendChild(h2)
-
-            a.addEventListener('click', (e)=>{
-                e.preventDefault()
-
-                var produtoWindowArea = document.querySelector('.produtoWindowArea')
-
-                produtoWindowArea.style.opacity = 0
-                produtoWindowArea.style.display = 'flex'
-                setTimeout(()=>{
-                    produtoWindowArea.style.opacity = 1
-                }, 200)
-            })
-
-            document.querySelector('.btnVoltar').addEventListener('click', ()=>{
-                document.querySelector('.produtoWindowArea').style.display = 'none'
-            })
-
-            divItem.appendChild(divAvaliacao)
-
-            let starsPos = produtos[c].avaliacao
-            let starsNeg = 5 - starsPos
-
-            for(i = 1; i <= starsPos; i++) {
-                let imgAvaliacaoPos = document.createElement('img')
-                imgAvaliacaoPos.setAttribute('src', '/img/star2.svg')
-                divAvaliacao.appendChild(imgAvaliacaoPos)
-            }
-
-            if ( starsNeg != 0 ) {
-                for(i = 1; i <= starsNeg; i++) {
-                    let imgAvaliacaoNeg = document.createElement('img')
-                    imgAvaliacaoNeg.setAttribute('src', '/img/star.svg')
-                    divAvaliacao.appendChild(imgAvaliacaoNeg)
-                }
-            }
-
-            divItem.appendChild(spanOfertas)
-            divItem.appendChild(spanPreco)
-            divItem.appendChild(spanParcelamento)
-        }
-        
-        */
 
     </script>
     <!-- temporário, apenas enquanto os produtos não vieram do banco de dados -->
