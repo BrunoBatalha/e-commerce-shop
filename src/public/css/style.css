@@ -309,6 +309,51 @@
         background-color: #005AEB;
         border: none;
     }
+    /***************************** FOOTER *************************/
+
+    footer {
+        height: 200px;
+        margin-top: 20px;
+        background-color: #3E44AE;
+        display: flex;
+        font-family: 'Sen', sans-serif;
+        justify-content: center;
+    }
+    .container_footer {
+        width: 1140px;
+        height: 200px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .text_center_footer {
+        color: #FFF;
+        font-size: 28px;
+        text-align: center!important;
+    }
+    .logo_footer_png {
+        height: 11.5rem;
+    }
+    .pages_footer {
+        padding: 15px;
+        flex-direction: column;
+    }
+    .list_footer {
+        margin-bottom: 5px;
+        list-style: none;
+    }
+    .item_list_footer {
+        text-decoration: none;
+        color: #FFF;
+        font-size: 17.5px;
+    }
+    footer a:hover {
+        color: #1D2067;
+    }
+    .cep_footer {
+        padding:15px;
+        flex-direction: column;
+    }
+
 
 .models {
     display: none;
