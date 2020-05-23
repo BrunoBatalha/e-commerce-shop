@@ -14,19 +14,18 @@
 </head>
 <body>
     <main>
-        <form action="/login" method="POST"></form>
+        <form action="/gerarToken" method="POST">
             <div id="form">
                 <div class="txt_center_form">
                     <h1 class="txt_center">Área de login</h1>
                 </div>
                 <div id="inputs_area">
-                    
                     <div id="email_text">
                         <p class="email">Seu e-mail:</p>
                     </div>
                     <div id="email_input_area">
                         <i class="fas fa-user user"></i>
-                        <input id="inp_email" type="email" name='e-mail' placeholder="Exemplo123@gmail.com">
+                        <input id="inp_email" type="email" name='email' placeholder="Exemplo123@gmail.com">
                     </div>
                     <div id="password_text">
                         <p class="password">Sua senha:</p>
@@ -38,12 +37,14 @@
                 </div>
                 <div id="btn-area">
                 <div id="bottom_confirm">
-                    <h2 id="confirm-btn">Entrar</h2>
-                <div id="bottom_back">
-                    <h2 id="voltar-btn"><a href="/">Voltar</a></h2>
+                    <button id="confirm-btn" type="submit">Entrar</button>
+                    
+                    <div id="bottom_back">
+                        <h2 id="voltar-btn"><a href="/">Voltar</a></h2>
+                    </div>
+                </div>
             </div>
-        </div>
-        </div>
+        </form>
     </main>
 </body>
 </html>

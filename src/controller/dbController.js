@@ -1,5 +1,10 @@
 const Produto = require('../models/produto');
+const cookieParser = require('cookie-parser');
+const express = require('express');
+const app = express();
+const jwt = require('jsonwebtoken');
 
+//Cookie
 
 exports.save = async (req,res) => {
     try{
@@ -73,17 +78,8 @@ exports.listar = async (req,res) => {
 exports.deletar = async (req,res) => {
     try{
         await Produto.findByIdAndRemove(req.params.id);
-        res.send("Dados deletados com sucesso...")
+        res.send("<center><h1>Dados deletados com sucesso...</h1></center>")
     }catch(err) {
         res.send("Houve um erro a deletar: "+err);
     };
 };
-exports.renderLogin = async (req,res) => {
-    res.render('pages/login');
-};
-exports.renderSobre = async (req,res) => {
-    res.render('pages/sobre');
-}
-exports.renderComprar = async (req,res) => {
-    res.render('pages/comprar');
-}

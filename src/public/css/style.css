@@ -313,3 +313,6 @@
 .models {
     display: none;
 }
+.click{
+    cursor:pointer;
+}
