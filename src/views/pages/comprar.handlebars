@@ -16,46 +16,62 @@
     </script>
 
     <div class="topo">
-        <h1><a href="/">LOGO</a></h1>
+        <div><a href="./"><img src="/img/logo shop.png" alt=""></a></div>
     </div>
 
-    <div class="info">  
+    <div class="info">
         <div class="endereco">
-            <h2>Endereço</h2>
+            <h2>endereço para entrega</h2>
+            <div><strong>Rubinaldo Arcanjo da Costa</strong></div>
+            <div>Rua Fulando de Tal, 4875, complemento</div>
+            <div>Bairro</div>
+            <div>Cidade - UF</div>
+            <div>CEP 12345-123</div>
         </div>
         <div class="pedido">
-            <h2>Seu pedido</h2>
+            <h2>resumo do pedido</h2>
+            <div class="detalhes">
+                <div class="detalhes-image"><img src="/img/products/iphone7.png" alt=""></div>
+                <div class="detalhes-info">
+                    <div>iPhone 7 32GB</div>
+                    <div>preço R$ 999,00</div>
+                    <div>frete R$ 99,00</div>
+                    <hr>
+                    <div>total R$ 1.098,00</div>
+                    <small>em até 12x sem juros</small>
+                </div>
+            </div>
         </div>
     </div>
 
-    <div class="opcao-entrega">
-        <h2>Opções de entrega</h2>
-        Entrega rápida <input type="radio" name="opcaoEntrega" id="entregaRapida"><br><br>
-        Entrega comum <input type="radio" name="opcaoEntrega" id="entregaComum">
+    <hr style="width: 1000px; border: none; border-bottom: 1px solid #dddddd; margin: 20px auto;">
+
+    <div class="entrega">
+        <h2>opções de entrega</h2>
+        <div class="opcoes-entrega">
+            <div class="opcao-entrega-1"> <label for="entregaRapida">entrega rápida</label> <input type="radio" name="opcaoEntrega" id="entregaRapida" value="entregaRapida"></div>
+            <div class="opcao-entrega-2"> <label for="entregaComum">entrega comum</label> <input type="radio" name="opcaoEntrega" id="entregaComum" value="entregaComum"></div>
+        </div>
     </div>
 
-    <div class="cupom">
-        <h2>Cupom de desconto</h2>
-        <input type="text" name="cupomText" id="cupomText">
-        <button value="validarCupom">Validar</button>
-    </div>
+    <hr style="width: 1000px; border: none; border-bottom: 1px solid #dddddd; margin: 20px auto;">
 
     <div class="f-pagamento">
-        <h2>Forma de pagamento</h2>
+        <h2>forma de pagamento</h2>
 
-        Boleto <input type="radio" name="fPagamento" id="boleto">
+        <label for="boleto">boleto</label> <input type="radio" name="fPagamento" id="boleto" value="boleto">
 
-        Cartão de crédito <input type="radio" name="fPagamento" id="compraComCartao"><br><br>
+        <label for="compraComCartao">cartão de crédito</label> <input type="radio" name="fPagamento" id="compraComCartao" value="cartao"><br><br>
 
         <div class="formCartao">
 
-                Número do cartão<br>
+                número do cartão<br>
                 <input type="text" name="nCartao" id="numeroCartao"><br><br>
 
-                Nome impresso no cartão<br>
+                nome impresso no cartão<br>
                 <input type="text" name="nCartao" id="nomeNoCartao"><br><br>
 
-                Validade
+                validade
                 <select name="validadeCartaoMes" id="validadeCartaoMes">
                     <option value="01">01</option>
                     <option value="02">02</option>
@@ -72,19 +88,65 @@
                 </select>
                 <br><br>
 
-                CVV<br><br>
-                <input type="text" name="cvvCartao" id="cvvCartao"><br>
-                Parcelas<br><br>
+                cvv<br>
+                <input type="text" name="cvvCartao" id="cvvCartao"><br><br>
+                
+                parcelas
+                <select name="parcelas" id="parcelas">
+                    <option value="1">1x</option>
+                    <option value="2">2x</option>
+                    <option value="3">3x</option>
+                    <option value="4">4x</option>
+                    <option value="5">5x</option>
+                    <option value="6">6x</option>
+                    <option value="7">7x</option>
+                    <option value="8">8x</option>
+                    <option value="9">9x</option>
+                    <option value="10">10x</option>
+                </select>
 
-                <input type="text" name="nCartao" id="parcelaCompra">
+                <br><br>
+
+                <strong>resumo do pagamento: R$ 999,00 em 10x de R$ 99,00 sem juros</strong>
 
         </div>
     </div>
 
+    <hr style="width: 1000px; border: none; border-bottom: 1px solid #dddddd; margin: 20px auto;">
+
     <div class="btn-pagamento" onclick="comprar()">
-        <button value="btnPagamento">PAGAR</button>
+        <button value="btnPagamento">pagar</button>
     </div>
 
     <script src="/js/compra.js"></script>
+    <script>
+        let entrega1 = document.querySelector('.opcao-entrega-1')
+        let entrega2 = document.querySelector('.opcao-entrega-2')
+        let radio = document.getElementsByName('opcaoEntrega')
+
+        radio['0'].addEventListener('change', () => {
+            if ( radio['0'].getAttribute('id') == 'entregaRapida' ) {
+                entrega2.classList.remove('selec')
+                entrega1.classList.add('selec')
+            }
+        })
+        radio['1'].addEventListener('change', () => {
+            if ( radio['1'].getAttribute('id') == 'entregaComum' ) {
+                entrega1.classList.remove('selec')
+                entrega2.classList.add('selec')
+            }
+        })
+
+        let fPagamento = document.getElementsByName('fPagamento')
+        let formCartao = document.querySelector('.formCartao')
+
+        fPagamento['0'].addEventListener('change', () => {
+            formCartao.style.display = 'none'
+        })
+        fPagamento['1'].addEventListener('change', () => {
+            formCartao.style.display = 'block'
+        })
+
+    </script>
 </body>
 </html>
