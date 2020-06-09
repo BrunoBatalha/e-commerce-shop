@@ -7,3 +7,6 @@ exports.renderLogin = async (req,res) => {
 exports.renderSobre = async (req,res) => {
     res.render('pages/sobre');
 };
+exports.renderCompra = async (req,res) => {
+    res.render('pages/comprar');
+}
