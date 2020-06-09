@@ -7,12 +7,19 @@
     <link rel="stylesheet" href="/css/comprar.css">
 </head>
 <body>
+    <script>
+        (function() {
+            if(!localStorage.getItem('token')) {
+                location.href = "/login";
+            }
+        })();
+    </script>
 
     <div class="topo">
         <h1><a href="/">LOGO</a></h1>
     </div>
 
-    <div class="info">
+    <div class="info">  
         <div class="endereco">
             <h2>Endereço</h2>
         </div>
@@ -23,8 +30,8 @@
 
     <div class="opcao-entrega">
         <h2>Opções de entrega</h2>
-        Entrega rápida <input type="radio" name="opcaoEntrega"><br><br>
-        Entrega comum <input type="radio" name="opcaoEntrega">
+        Entrega rápida <input type="radio" name="opcaoEntrega" id="entregaRapida"><br><br>
+        Entrega comum <input type="radio" name="opcaoEntrega" id="entregaComum">
     </div>
 
     <div class="cupom">
@@ -36,28 +43,27 @@
     <div class="f-pagamento">
         <h2>Forma de pagamento</h2>
 
-        Boleto <input type="radio" name="fPagamento">
+        Boleto <input type="radio" name="fPagamento" id="boleto">
 
-        Cartão de crédito <input type="radio" name="fPagamento"><br><br>
+        Cartão de crédito <input type="radio" name="fPagamento" id="compraComCartao"><br><br>
 
         <div class="formCartao">
 
-            <form action="" method="post">
                 Número do cartão<br>
-                <input type="text" name="nCartao" id=""><br><br>
+                <input type="text" name="nCartao" id="numeroCartao"><br><br>
 
                 Nome impresso no cartão<br>
-                <input type="text" name="nCartao" id=""><br><br>
+                <input type="text" name="nCartao" id="nomeNoCartao"><br><br>
 
                 Validade
-                <select name="validadeCartaoMes" id="">
+                <select name="validadeCartaoMes" id="validadeCartaoMes">
                     <option value="01">01</option>
                     <option value="02">02</option>
                     <option value="03">03</option>
                     <option value="04">04</option>
                     <option value="05">05</option>
                 </select>
-                <select name="validadeCartaoAno" id="">
+                <select name="validadeCartaoAno" id="validadeCartaoAno">
                     <option value="2020">2020</option>
                     <option value="2021">2021</option>
                     <option value="2022">2022</option>
@@ -67,19 +73,18 @@
                 <br><br>
 
                 CVV<br><br>
-                <input type="text" name="cvvCartao" id=""><br>
+                <input type="text" name="cvvCartao" id="cvvCartao"><br>
                 Parcelas<br><br>
 
-                <input type="text" name="nCartao" id="">
-
-            </form>
+                <input type="text" name="nCartao" id="parcelaCompra">
 
         </div>
     </div>
 
-    <div class="btn-pagamento">
+    <div class="btn-pagamento" onclick="comprar()">
         <button value="btnPagamento">PAGAR</button>
     </div>
 
+    <script src="/js/compra.js"></script>
 </body>
 </html>
