@@ -10,3 +10,6 @@ exports.renderSobre = async (req,res) => {
 exports.renderCompra = async (req,res) => {
     res.render('pages/comprar');
 }
+exports.renderBoleto = async (req,res) => {
+    res.render('pages/boleto');
+}

@@ -9,6 +9,7 @@ router.get('/',pageController.renderHome);
 router.get('/login',pageController.renderLogin);
 router.get('/sobre',pageController.renderSobre);
 router.get('/compra',pageController.renderCompra);
+router.get('/boleto',pageController.renderBoleto);
 
 //rotas para consultas no banco
 router.post('/salvar',dbController.save);

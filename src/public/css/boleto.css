@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.crop {
+    border-bottom: 2px dashed black;
+}
+
+.billet-container {
+    width: 90%;
+    margin: auto;
+    padding: 50px 0;
+}
+
+/* header */
+
+.bank-info {
+    display: flex;
+    padding: 10px 0;
+}
+
+.bank-info div {
+    border-right: 1px solid black;
+    padding: 0 10px;
+}
+.bank-info div:last-child {
+    border-right: none;
+}
+
+/* body */
+
+.billet-body {
+    border: 1px solid black;
+}
+
+.billet-body div {
+    border-bottom: 1px solid black;
+    padding: 20px 10px;
+}
+
+.billet-body div:last-child {
+    border: none;
+}
+
+/* footer */
+
+.billet-footer {
+    padding: 10px;
+    position: relative;
+}
+
+/* actions */
+
+.billet-actions {
+    width: 90%;
+    margin: auto;
+}

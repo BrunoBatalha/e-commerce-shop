@@ -1,0 +1,57 @@
+<link rel="stylesheet" href="css/boleto.css">
+
+<div class="billet-container">
+
+    <div class="crop"></div>
+
+    <div class="billet-header">
+
+        <div class="bank-info">
+            <div class="bank">Banco Capital Inicial</div>
+            <div class="bank-code">000</div>
+            <div class="numeric-bar-code">00000.00000 00000.000000 00000.000000 0 00000000000000</div>
+        </div>
+
+    </div>
+
+    <div class="billet-body">
+
+        <div class="location">Local do pagamento: em qualquer agência bancária.</div>
+        <div class="">Cedente: Shop Elerônicos SA</div>
+        <div class="expiration">Vencimento: 22/07/2020</div>
+        <div class="product">iPhone 7 64GB</div>
+        <div class="value">Valor do documento: R$1.999,00</div>
+
+
+    </div>
+    
+    <div class="billet-footer">
+        00000.00000 00000.000000 00000.000000 0 00000000000000<br><br>
+        <small><em>autenticação mecânica</em></small>
+    </div>
+
+    <div class="crop"></div>
+
+</div>
+
+<div class="billet-actions">
+
+    <button onclick="print()" >Imprimir</button>
+    {{!-- <button onclick="geraPDF()" >Salvar</button> --}}
+
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.debug.js" integrity="sha384-NaWTHo/8YCBYJ59830LTz/P4aQZK1sS0SneOgAvhsIl3zBu8r9RevNg5lHCHAuQ/" crossorigin="anonymous"></script>
+
+<script>
+
+    function geraPDF() {
+
+        let billet = document.querySelector('.billet-container').innerText
+
+        let doc = new jsPDF()
+        doc.text(billet, 10, 10)
+        doc.save('boleto.pdf')
+    }
+
+</script>
